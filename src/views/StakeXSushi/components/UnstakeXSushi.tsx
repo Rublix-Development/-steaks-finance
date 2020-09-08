@@ -6,17 +6,34 @@ import CardContent from '../../../components/CardContent'
 import CardIcon from '../../../components/CardIcon'
 import Label from '../../../components/Label'
 import Value from '../../../components/Value'
-import useEarnings from '../../../hooks/useEarnings'
 import useReward from '../../../hooks/useReward'
 import {getBalanceNumber} from '../../../utils/formatBalance'
+import useTokenBalance from "../../../hooks/useTokenBalance";
+import {Contract} from "web3-eth-contract";
+import useModal from "../../../hooks/useModal";
+import WithdrawModal from "./WithdrawModal";
+import useLeave from "../../../hooks/useLeave";
 
 interface HarvestProps {
+  lpContract: Contract
 }
 
-const HarvestXSushi: React.FC<HarvestProps> = ({}) => {
-  const earnings = useEarnings(0)
+const UnstakeXSushi: React.FC<HarvestProps> = ({lpContract}) => {
+
+  const xSushiBalance = useTokenBalance(lpContract.options.address)
   const [pendingTx, setPendingTx] = useState(false)
-  const {onReward} = useReward(0)
+
+  const {onLeave} = useLeave()
+
+  const tokenName = "xSUSHI"
+
+  const [onPresentLeave] = useModal(
+    <WithdrawModal
+      max={xSushiBalance}
+      onConfirm={onLeave}
+      tokenName={tokenName}
+    />,
+  )
 
   return (
     <Card>
@@ -24,16 +41,16 @@ const HarvestXSushi: React.FC<HarvestProps> = ({}) => {
         <StyledCardContentInner>
           <StyledCardHeader>
             <CardIcon>🍣</CardIcon>
-            <Value value={getBalanceNumber(earnings)}/>
+            <Value value={getBalanceNumber(xSushiBalance)}/>
             <Label text="xSUSHI (SushiBar) Available"/>
           </StyledCardHeader>
           <StyledCardActions>
             <Button
-              disabled={!earnings.toNumber() || pendingTx}
-              text={pendingTx ? 'Collecting SUSHI' : 'Convert to SUSHI'}
+              disabled={!xSushiBalance.toNumber() || pendingTx}
+              text={pendingTx ? 'Converting to SUSHI' : 'Convert to SUSHI'}
               onClick={async () => {
                 setPendingTx(true)
-                await onReward()
+                await onPresentLeave()
                 setPendingTx(false)
               }}
             />
@@ -69,4 +86,4 @@ const StyledCardContentInner = styled.div`
   justify-content: space-between;
 `
 
-export default HarvestXSushi
+export default UnstakeXSushi

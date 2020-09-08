@@ -6,7 +6,7 @@ import Spacer from '../../components/Spacer'
 import useSushi from '../../hooks/useSushi'
 import {getXSushiStakingContract} from '../../sushi/utils'
 import {getContract} from '../../utils/erc20'
-import HarvestXSushi from './components/HarvestXSushi'
+import UnstakeXSushi from './components/UnstakeXSushi'
 import StakeSushi from "./components/StakeSushi";
 
 import {contractAddresses} from '../../sushi/lib/constants'
@@ -36,12 +36,13 @@ const StakeXSushi: React.FC = () => {
       <StyledFarm>
         <StyledCardsWrapper>
           <StyledCardWrapper>
-            <HarvestXSushi/>
+            <UnstakeXSushi
+              lpContract={lpContract}
+            />
           </StyledCardWrapper>
           <Spacer/>
           <StyledCardWrapper>
             <StakeSushi
-              lpContract={lpContract}
             />
           </StyledCardWrapper>
         </StyledCardsWrapper>
@@ -49,8 +50,10 @@ const StakeXSushi: React.FC = () => {
         <StyledCardsWrapper>
           <StyledCardWrapper>
             <StyledInfo>
-              ℹ️️ You can stake your SUSHI tokens for xSUSHI (SushiBar), which allows you to get a
-              portion of swap fees initiated on SushiSwap. The fee you get (in SUSHI) is based on
+              ℹ️️ You can stake your SUSHI tokens for xSUSHI (SushiBar) tokens on a 1:1 basis which
+              allows you to get a
+              portion of swap fees initiated on SushiSwap. The fee you get (converted to SUSHI from
+              any swap) is based on
               the
               percentage of shares you own in the xSUSHI pool. There are currently XXX xSUSHI tokens
               in the pool.
