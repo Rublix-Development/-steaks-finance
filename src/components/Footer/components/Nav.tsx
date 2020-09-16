@@ -6,23 +6,23 @@ const Nav: React.FC = () => {
     <StyledNav>
       <StyledLink
         target="_blank"
-        href="https://etherscan.io/address/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd#code"
+        href="https://etherscan.io/address/#code"
       >
         MasterChef Contract
       </StyledLink>
       {/*<StyledLink
         target="_blank"
-        href="https://uniswap.info/pair/0xce84867c3c02b05dc570d0135103d3fb9cc19433"
+        href="https://uniswap.info/pair/"
       >
-        SushiSwap SUSHI-ETH
-      </StyledLink> */}
-      <StyledLink target="_blank" href="https://discord.gg/hJ2p555">
+        Uniswap STEAK-ETH
+      </StyledLink>
+      <StyledLink target="_blank" href="">
         Discord
       </StyledLink>
-      <StyledLink target="_blank" href="https://github.com/sushiswap">
+      <StyledLink target="_blank" href="https://github.com/rublixdev/steaks-protocol">
         Github
       </StyledLink>
-      <StyledLink target="_blank" href="https://twitter.com/sushiswap">
+      <StyledLink target="_blank" href="https://twitter.com/hedgetradehq">
         Twitter
       </StyledLink>
       <StyledLink target="_blank" href="https://medium.com/@sushiswapchef">

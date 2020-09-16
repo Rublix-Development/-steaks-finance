@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <PageHeader
         icon={<img src={chef} height={120} />}
         title="MasterChef is Ready"
-        subtitle="Stake SushiSwap LP tokens to claim your very own yummy SUSHI!"
+        subtitle="Stake Uniswap LP tokens to claim your very own yummy STEAK!"
       />
 
       <Container>
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <StyledInfo>
-        🏆<b>Pro Tip</b>: SUSHI-ETH SLP token pool yields 4.8x more token
+        🏆<b>Pro Tip</b>: HEDG-ETH UNI-V2 LP token pool yields TWICE more token
         rewards per block.
       </StyledInfo>
       <Spacer size="lg" />
