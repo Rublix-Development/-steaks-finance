@@ -13,30 +13,30 @@ const GAS_LIMIT = {
   },
 }
 
-export const getMasterChefAddress = (sushi) => {
-  return sushi && sushi.masterChefAddress
+export const getMasterChefAddress = (steak) => {
+  return steak && steak.masterChefAddress
 }
-export const getSushiAddress = (sushi) => {
-  return sushi && sushi.sushiAddress
+export const getSteakAddress = (steak) => {
+  return steak && steak.steakAddress
 }
-export const getWethContract = (sushi) => {
-  return sushi && sushi.contracts && sushi.contracts.weth
-}
-
-export const getMasterChefContract = (sushi) => {
-  return sushi && sushi.contracts && sushi.contracts.masterChef
-}
-export const getSushiContract = (sushi) => {
-  return sushi && sushi.contracts && sushi.contracts.sushi
+export const getWethContract = (steak) => {
+  return steak && steak.contracts && steak.contracts.weth
 }
 
-export const getXSushiStakingContract = (sushi) => {
-  return sushi && sushi.contracts && sushi.contracts.xSushiStaking
+export const getMasterChefContract = (steak) => {
+  return steak && steak.contracts && steak.contracts.masterChef
+}
+export const getSteakContract = (steak) => {
+  return steak && steak.contracts && steak.contracts.steak
 }
 
-export const getFarms = (sushi) => {
-  return sushi
-    ? sushi.contracts.pools.map(
+export const getXSteakStakingContract = (steak) => {
+  return steak && steak.contracts && steak.contracts.xSteakStaking
+}
+
+export const getFarms = (steak) => {
+  return steak
+    ? steak.contracts.pools.map(
         ({
           pid,
           name,
@@ -57,8 +57,8 @@ export const getFarms = (sushi) => {
           tokenAddress,
           tokenSymbol,
           tokenContract,
-          earnToken: 'sushi',
-          earnTokenAddress: sushi.contracts.sushi.options.address,
+          earnToken: 'steak',
+          earnTokenAddress: steak.contracts.steak.options.address,
           icon,
         }),
       )
@@ -74,7 +74,7 @@ export const getPoolWeight = async (masterChefContract, pid) => {
 }
 
 export const getEarned = async (masterChefContract, pid, account) => {
-  return masterChefContract.methods.pendingSushi(pid, account).call()
+  return masterChefContract.methods.pendingSteak(pid, account).call()
 }
 
 export const getTotalLPWethValue = async (
@@ -132,12 +132,12 @@ export const approveAddress = async (lpContract, address, account) => {
       .send({ from: account })
 }
 
-export const getSushiSupply = async (sushi) => {
-  return new BigNumber(await sushi.contracts.sushi.methods.totalSupply().call())
+export const getSteakSupply = async (steak) => {
+  return new BigNumber(await steak.contracts.steak.methods.totalSupply().call())
 }
 
-export const getXSushiSupply = async (sushi) => {
-  return new BigNumber(await sushi.contracts.xSushiStaking.methods.totalSupply().call())
+export const getXSteakSupply = async (steak) => {
+  return new BigNumber(await steak.contracts.xSteakStaking.methods.totalSupply().call())
 }
 
 export const stake = async (masterChefContract, pid, amount, account) => {

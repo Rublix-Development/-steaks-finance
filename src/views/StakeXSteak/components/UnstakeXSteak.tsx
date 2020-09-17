@@ -18,9 +18,9 @@ interface HarvestProps {
   lpContract: Contract
 }
 
-const UnstakeXSushi: React.FC<HarvestProps> = ({lpContract}) => {
+const UnstakeXSteak: React.FC<HarvestProps> = ({lpContract}) => {
 
-  const xSushiBalance = useTokenBalance(lpContract.options.address)
+  const xSteakBalance = useTokenBalance(lpContract.options.address)
   const [pendingTx, setPendingTx] = useState(false)
 
   const {onLeave} = useLeave()
@@ -29,7 +29,7 @@ const UnstakeXSushi: React.FC<HarvestProps> = ({lpContract}) => {
 
   const [onPresentLeave] = useModal(
     <WithdrawModal
-      max={xSushiBalance}
+      max={xSteakBalance}
       onConfirm={onLeave}
       tokenName={tokenName}
     />,
@@ -41,12 +41,12 @@ const UnstakeXSushi: React.FC<HarvestProps> = ({lpContract}) => {
         <StyledCardContentInner>
           <StyledCardHeader>
             <CardIcon>🥩</CardIcon>
-            <Value value={getBalanceNumber(xSushiBalance)}/>
+            <Value value={getBalanceNumber(xSteakBalance)}/>
             <Label text="xSTEAK (SteakBar) Available"/>
           </StyledCardHeader>
           <StyledCardActions>
             <Button
-              disabled={!xSushiBalance.toNumber() || pendingTx}
+              disabled={!xSteakBalance.toNumber() || pendingTx}
               text={pendingTx ? 'Converting to STEAK' : 'Convert to STEAK'}
               onClick={async () => {
                 setPendingTx(true)
@@ -86,4 +86,4 @@ const StyledCardContentInner = styled.div`
   justify-content: space-between;
 `
 
-export default UnstakeXSushi
+export default UnstakeXSteak

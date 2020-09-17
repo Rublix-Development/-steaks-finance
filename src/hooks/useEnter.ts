@@ -1,24 +1,24 @@
 import {useCallback} from 'react'
 
-import useSushi from './useSushi'
+import useSteak from './useSteak'
 import {useWallet} from 'use-wallet'
 
-import {enter, getXSushiStakingContract} from '../sushi/utils'
+import {enter, getXSteakStakingContract} from '../steak/utils'
 
 const useEnter = () => {
   const {account} = useWallet()
-  const sushi = useSushi()
+  const steak = useSteak()
 
   const handle = useCallback(
     async (amount: string) => {
       const txHash = await enter(
-        getXSushiStakingContract(sushi),
+        getXSteakStakingContract(steak),
         amount,
         account,
       )
       console.log(txHash)
     },
-    [account, sushi],
+    [account, steak],
   )
 
   return {onEnter: handle}
