@@ -8,7 +8,7 @@ const Logo: React.FC = () => {
     <StyledLogo to="/">
       <img src={chef} height="32" style={{ marginTop: -4 }} />
       <StyledText>
-        SteakSwap <MasterChefText>MasterChef</MasterChefText>
+        SteakSwap
       </StyledText>
     </StyledLogo>
   )
