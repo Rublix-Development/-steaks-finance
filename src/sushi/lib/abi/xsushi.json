@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "contract IERC20",
-        "name": "_sushi",
+        "name": "_steak",
         "type": "address"
       }
     ],
@@ -229,7 +229,7 @@
   },
   {
     "inputs": [],
-    "name": "sushi",
+    "name": "steak",
     "outputs": [
       {
         "internalType": "contract IERC20",
