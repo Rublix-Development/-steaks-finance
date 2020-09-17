@@ -46,10 +46,9 @@ const DisclaimerModal: React.FC<DisclaimerModal> = ({
         <div>
           <p>Attention STEAK Uniswap LPs</p>
           <p>
-            The only Uniswap pool that is compatible with STEAK is STEAK/yCRV
-            (Curve yPool tokens)
+            The only Uniswap pool that is compatible with STEAK is STEAK/ETH
           </p>
-          <p>Providing liquidity for other Sushiswap pools is dangerous</p>
+          <p>Providing liquidity for other Steakswap pools is dangerous</p>
           <p>You will LOSE your share of rebases</p>
         </div>
       )

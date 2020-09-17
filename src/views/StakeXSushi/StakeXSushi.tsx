@@ -66,9 +66,10 @@ const StakeXSushi: React.FC = () => {
           <StyledCardWrapper>
             <StyledInfo>
               ℹ️️ You will earn a portion of the swaps fees based on the amount
-              of xSushi held relative the weight of the staking. xSushi can be minted
-              by staking Sushi. To redeem Sushi staked plus swap fees convert xSushi
-              back to Sushi. {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)} xSUSHI in the whole pool.` : '' }
+              of xSteak held relative the weight of the staking. xSteak can be minted
+              by staking Steak. To redeem Stake staked plus swap fees convert xSteak
+              back to STEAK. {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)}
+              xSTEAK in the whole pool.` : '' }
             </StyledInfo>
           </StyledCardWrapper>
         </StyledCardsWrapper>

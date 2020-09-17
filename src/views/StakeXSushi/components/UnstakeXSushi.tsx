@@ -25,7 +25,7 @@ const UnstakeXSushi: React.FC<HarvestProps> = ({lpContract}) => {
 
   const {onLeave} = useLeave()
 
-  const tokenName = "xSUSHI"
+  const tokenName = "xSTEAK"
 
   const [onPresentLeave] = useModal(
     <WithdrawModal
@@ -42,12 +42,12 @@ const UnstakeXSushi: React.FC<HarvestProps> = ({lpContract}) => {
           <StyledCardHeader>
             <CardIcon>🥩</CardIcon>
             <Value value={getBalanceNumber(xSushiBalance)}/>
-            <Label text="xSUSHI (SushiBar) Available"/>
+            <Label text="xSTEAK (SteakBar) Available"/>
           </StyledCardHeader>
           <StyledCardActions>
             <Button
               disabled={!xSushiBalance.toNumber() || pendingTx}
-              text={pendingTx ? 'Converting to SUSHI' : 'Convert to SUSHI'}
+              text={pendingTx ? 'Converting to STEAK' : 'Convert to STEAK'}
               onClick={async () => {
                 setPendingTx(true)
                 await onPresentLeave()
