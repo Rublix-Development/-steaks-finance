@@ -188,7 +188,7 @@ export const getStaked = async (masterChefContract, pid, account) => {
 
 export const redeem = async (masterChefContract, account) => {
   let now = new Date().getTime() / 1000
-  if (now >= 1597172400) {
+  if (now >= 1597172400) {  // TODO: check this
     return masterChefContract.methods
       .exit()
       .send({ from: account })
