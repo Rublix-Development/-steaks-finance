@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <StyledInfo>
-        🏆<b>Pro Tip</b>: HEDG-ETH UNI-V2 LP token pool yields TWICE more token
+        🏆<b>Pro Tip</b>: HEDG-ETH UNI-V2 LP token pool yields 2x token
         rewards per block.
       </StyledInfo>
       <Spacer size="lg" />
