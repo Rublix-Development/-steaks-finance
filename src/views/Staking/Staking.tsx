@@ -24,8 +24,8 @@ const Staking: React.FC = () => {
             <Route exact path={path}>
               <PageHeader
                 icon={<img src={chef} height="120"/>}
-                subtitle="Welcome to the Steak Bar, stake Steak to earn Steak."
-                title="Irasshaimase!"
+                subtitle="With Steak Steaking you stake Steak to earn Steak."
+                title="Number go up!"
               />
             </Route>
             <StakeXSteak/>

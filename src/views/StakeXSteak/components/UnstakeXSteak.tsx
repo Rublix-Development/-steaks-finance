@@ -42,7 +42,7 @@ const UnstakeXSteak: React.FC<HarvestProps> = ({lpContract}) => {
           <StyledCardHeader>
             <CardIcon>🥩</CardIcon>
             <Value value={getBalanceNumber(xSteakBalance)}/>
-            <Label text="xSTEAK (SteakBar) Available"/>
+            <Label text="xSTEAK Available"/>
           </StyledCardHeader>
           <StyledCardActions>
             <Button
