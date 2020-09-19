@@ -51,16 +51,16 @@ export const uniswapPools = {
 
 export const contractAddresses = {
   steak: {
-    1: '0xF10320bA62dEdD7F64CF43D0f81B400344458DB8',
+    1: '0x0F854835ba614D5460bfe0e910921185482052d9',
   },
   masterChef: {
-    1: '0x7817Cb0654a8158Df91f2A9B349594fba423E95E',
+    1: '0xFD01f7a212eAa4aCAdB986fCb74951D510594c8E',
   },
   weth: {
     1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
   },
   xSteak: {
-    1: '0xeA24Ed230D4e90082f43bA1B745917E3e89149Bf'
+    1: '0x9105a5AaD9601da88CB1f0a8152b2Ed950Fb5117'
   }
 }
 
