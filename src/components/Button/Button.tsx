@@ -118,6 +118,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   width: 100%;
   &:hover {
     background-color: ${props => props.theme.color.grey[100]};
+    box-shadow: 1px 1px #022A07;
   }
 `
 

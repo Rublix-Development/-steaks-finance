@@ -58,7 +58,9 @@ const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
         />
       </ModalContent>
       <ModalActions>
-        <Button onClick={onDismiss} text="Cancel" />
+        <div className="red-button">
+          <Button onClick={onDismiss} text="Cancel" />
+        </div>
       </ModalActions>
     </Modal>
   )

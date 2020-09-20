@@ -21,3 +21,13 @@ code {
     margin-right: 5px;
     margin-left: 5px;
 }
+
+.red-button > button{
+  background-color: #CC3E30;
+  box-shadow: 2px 2px #7E0000;
+}
+
+.red-button > button:hover{
+  background-color: #c4291a; 
+  box-shadow: 1px 1px #7E0000;
+}

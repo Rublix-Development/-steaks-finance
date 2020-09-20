@@ -8,6 +8,7 @@ import PageHeader from '../../components/PageHeader'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
 
+
 const Home: React.FC = () => {
   return (
     <Page>
@@ -25,12 +26,12 @@ const Home: React.FC = () => {
         rewards per block.
       </StyledInfo>
       <Spacer size="lg" />
-      <div
+      <div className="red-button"
         style={{
           margin: '0 auto',
         }}
       >
-        <Button text="See the Menu" to="/farms" variant="secondary"/>
+        <Button text="See the Menu" to="/farms" variant="secondary" />
       </div>
     </Page>
   )
