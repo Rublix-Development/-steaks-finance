@@ -1,10 +1,19 @@
 body {
-  background: #fff8ee;
+  background-image:url('assets/img/Bg.png');
+  background-color: #F3F3F3;
+  background-size: cover;
+  background-position: center;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.hWCVfc{
+  background-image:url('assets/img/Gold-star.png') !important;
+  background-position: center;
+  background-size: cover;
 }
 
 code {
