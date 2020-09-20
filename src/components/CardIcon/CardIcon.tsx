@@ -1,27 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
+import goldStar from '../../assets/img/Gold-star.png'
 
 interface CardIconProps {
   children?: React.ReactNode,
 }
 
 const CardIcon: React.FC<CardIconProps> = ({ children }) => (
-  <StyledCardIcon>
+  <StyledCardIcon style={{  
+                    backgroundImage: "url(" + goldStar + ")",
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                  }}>
     {children}
   </StyledCardIcon>
 )
 
-const StyledCardIcon = styled.div`
-  background-color: ${props => props.theme.color.grey[200]};
-  font-size: 36px;
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
+const StyledCardIcon = styled.div` 
+  font-size: 30px;
+  height: 95px;
+  width: 100px;
   align-items: center;
   display: flex;
-  justify-content: center;
-  box-shadow: inset 4px 4px 8px ${props => props.theme.color.grey[300]},
-    inset -6px -6px 12px ${props => props.theme.color.grey[100]};
+  justify-content: center;  
   margin: 0 auto ${props => props.theme.spacing[3]}px;
 `
 

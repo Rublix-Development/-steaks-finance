@@ -48,7 +48,9 @@ const WalletProviderModal: React.FC<ModalProps> = ({ onDismiss }) => {
       </ModalContent>
 
       <ModalActions>
-        <Button text="Cancel" variant="secondary" onClick={onDismiss} />
+        <div className="red-button">
+          <Button text="Cancel" variant="secondary" onClick={onDismiss} />
+        </div>
       </ModalActions>
     </Modal>
   )

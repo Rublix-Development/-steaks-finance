@@ -91,8 +91,6 @@ const Balances: React.FC = () => {
         <CardContent>
           <StyledBalances>
             <StyledBalance>
-              <SteakIcon />
-              <Spacer />
               <div style={{ flex: 1 }}>
                 <Label text="Your STEAK Balance" />
                 <Value

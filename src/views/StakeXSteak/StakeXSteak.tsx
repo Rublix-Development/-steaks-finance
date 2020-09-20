@@ -41,8 +41,7 @@ const StakeXSteak: React.FC = () => {
 
 
 
-  const lpContract = useMemo(() => {
-    debugger
+  const lpContract = useMemo(() => {    
     return getContract(ethereum as provider, tokenAddress)
   }, [ethereum, tokenAddress])
 

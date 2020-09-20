@@ -35,12 +35,13 @@ const StyledNav = styled.nav`
 `
 
 const StyledLink = styled.a`
-  color: ${(props) => props.theme.color.grey[400]};
+  color: ${(props) => props.theme.color.menu[100]};
   padding-left: ${(props) => props.theme.spacing[3]}px;
   padding-right: ${(props) => props.theme.spacing[3]}px;
   text-decoration: none;
+  text-transform: uppercase;
   &:hover {
-    color: ${(props) => props.theme.color.grey[500]};
+    color: ${(props) => props.theme.color.menu[200]};
   }
 `
 

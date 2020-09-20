@@ -1,5 +1,8 @@
 body {
-  background: #fff8ee;
+  background-image:url('assets/img/Bg.png');
+  background-color: #F3F3F3;
+  background-size: cover;
+  background-position: center;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
@@ -10,4 +13,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.redStar{
+  position: relative;
+    top: 6px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.red-button > button{
+  background-color: #CC3E30;
+  box-shadow: 2px 2px #7E0000;
+}
+
+.red-button > button:hover{
+  background-color: #c4291a; 
+  box-shadow: 1px 1px #7E0000;
 }

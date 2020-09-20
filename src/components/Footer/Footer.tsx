@@ -12,6 +12,7 @@ const Footer: React.FC = () => (
 )
 
 const StyledFooter = styled.footer`
+  background-color: #ffffff;
   align-items: center;
   display: flex;
   justify-content: center;
