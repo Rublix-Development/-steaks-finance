@@ -10,13 +10,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.hWCVfc{
-  background-image:url('assets/img/Gold-star.png') !important;
-  background-position: center;
-  background-size: cover;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.redStar{
+  position: relative;
+    top: 6px;
+    margin-right: 5px;
+    margin-left: 5px;
 }

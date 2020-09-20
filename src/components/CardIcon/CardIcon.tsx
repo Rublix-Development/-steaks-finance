@@ -7,16 +7,20 @@ interface CardIconProps {
 }
 
 const CardIcon: React.FC<CardIconProps> = ({ children }) => (
-  <StyledCardIcon>
+  <StyledCardIcon style={{  
+                    backgroundImage: "url(" + goldStar + ")",
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                  }}>
     {children}
   </StyledCardIcon>
 )
 
-const StyledCardIcon = styled.div`
-  
+const StyledCardIcon = styled.div` 
   font-size: 30px;
-  height: 90px;
-  width: 90px;  
+  height: 95px;
+  width: 100px;
   align-items: center;
   display: flex;
   justify-content: center;  

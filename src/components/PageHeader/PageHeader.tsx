@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import redStar from '../../assets/img/Star.png'
 import Container from '../Container'
 
 interface PageHeaderProps {
@@ -13,9 +13,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
   return (
     <Container>
       <StyledPageHeader>
-        <StyledIcon>{icon}</StyledIcon>
-        <StyledTitle>{title}</StyledTitle>
-        <StyledSubtitle>{subtitle}</StyledSubtitle>
+        <StyledIcon>{icon}</StyledIcon> 
+        <StyledSubtitle><img src={redStar} className="redStar" width="32" /> {subtitle} <img src={redStar} className="redStar" width="32" /> </StyledSubtitle>
       </StyledPageHeader>
     </Container>
   )
