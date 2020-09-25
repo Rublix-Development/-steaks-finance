@@ -1,8 +1,10 @@
 body {
   background-image:url('assets/img/Bg.png');
+  background-attachment: fixed;
   background-color: #F3F3F3;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
@@ -24,10 +26,17 @@ code {
 
 .red-button > button{
   background-color: #CC3E30;
-  box-shadow: 2px 2px #7E0000;
+  box-shadow: 0 0 6px 1px #7E0000;
+  border-radius: 10px;
 }
 
 .red-button > button:hover{
-  background-color: #c4291a; 
-  box-shadow: 1px 1px #7E0000;
+  background-color: #EC1119; 
+  box-shadow: 0 0 6px 1px #7E0000;
+  border-radius: 10px;
+}
+
+.inline-icons{
+  display: flex;
+  grid-gap: 15px;
 }

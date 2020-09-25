@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 
-import chef from '../../assets/img/Cowboy-hat.png'
+import chef from '../../assets/img/Cowboy.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'

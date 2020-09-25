@@ -128,11 +128,14 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.tokenSymbol === 'STEAK' && <StyledCardAccent />}
+      {farm.tokenSymbol === 'STEAK' && <StyledCardAccent />}      
       <Card>
         <CardContent>
           <StyledContent>
-            <CardIcon>{farm.icon}</CardIcon>
+            <div className="inline-icons">
+              <CardIcon> <img src={farm.icon.toString()} width="32" /> </CardIcon>
+              <CardIcon> <img src={farm.icon2.toString()} width="32" /> </CardIcon>
+            </div>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>
               <StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail>

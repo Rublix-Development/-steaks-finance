@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import chef from '../../assets/img/Logo.png'
+import chef from '../../assets/img/Logo1.svg'
 
 const Logo: React.FC = () => {
   return (

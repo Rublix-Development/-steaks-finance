@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import redStar from '../../assets/img/Star.png'
+import redStar from '../../assets/img/Gold-star.png'
 import Container from '../Container'
+import Spacer from '../../components/Spacer'
 
 interface PageHeaderProps {
   icon: React.ReactNode
@@ -13,7 +14,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
   return (
     <Container>
       <StyledPageHeader>
-        <StyledIcon>{icon}</StyledIcon> 
+      <StyledIcon>{icon}</StyledIcon> 
+      <Spacer size="md" />
         <StyledSubtitle><img src={redStar} className="redStar" width="32" /> {subtitle} <img src={redStar} className="redStar" width="32" /> </StyledSubtitle>
       </StyledPageHeader>
     </Container>
@@ -39,7 +41,7 @@ const StyledIcon = styled.div`
 
 const StyledTitle = styled.h1`
   font-family: 'Kaushan Script', sans-serif;
-  color: ${(props) => props.theme.color.grey[600]};
+  color: #fff;
   font-size: 36px;
   text-align: center;
   font-weight: 700;
@@ -48,7 +50,7 @@ const StyledTitle = styled.h1`
 `
 
 const StyledSubtitle = styled.h3`
-  color: ${(props) => props.theme.color.grey[400]};
+  color:  #fff;
   font-size: 18px;
   font-weight: 400;
   margin: 0;

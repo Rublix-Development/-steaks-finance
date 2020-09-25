@@ -12,6 +12,7 @@ import { getMasterChefContract } from '../../steak/utils'
 import { getContract } from '../../utils/erc20'
 import Harvest from './components/Harvest'
 import Stake from './components/Stake'
+import chef from '../../assets/img/Cowboy.png'
 
 const Farm: React.FC = () => {
   const { farmId } = useParams()
@@ -23,6 +24,7 @@ const Farm: React.FC = () => {
     earnToken,
     name,
     icon,
+    icon2,
   } = useFarm(farmId) || {
     pid: 0,
     lpToken: '',
@@ -31,6 +33,7 @@ const Farm: React.FC = () => {
     earnToken: '',
     name: '',
     icon: '',
+    icon2: '',
   }
 
   useEffect(() => {
@@ -57,7 +60,7 @@ const Farm: React.FC = () => {
   return (
     <>
       <PageHeader
-        icon={icon}
+        icon={<img src={chef.toString()} height="120" />}
         subtitle={`Deposit ${lpTokenName}  Tokens and earn ${earnTokenName}`}
         title={name}
       />
@@ -79,14 +82,15 @@ const Farm: React.FC = () => {
         <StyledInfo>
           ⭐️ Every time you stake and unstake LP tokens, the contract will
           automagically harvest STEAK rewards for you!
-        </StyledInfo>
-        <Spacer size="md" />
+        </StyledInfo>        
+        <Spacer size="sm" />
         <StyledLink
           target="__blank"
           href={`https://steakswap.info/pair/${lpTokenAddress}`}
         >
           {lpTokenName} Info
         </StyledLink>
+        <Spacer size="lg" />
       </StyledFarm>
     </>
   )

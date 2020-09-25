@@ -1,4 +1,6 @@
 import BigNumber from 'bignumber.js/bignumber'
+import Img from '../../assets/img/Star.png'
+import Img2 from '../../assets/img/Gold-star.png'
 
 export const SUBTRACT_GAS_LIMIT = 100000
 
@@ -77,7 +79,8 @@ export const supportedPools = [
     name: 'Steak Party!',
     symbol: 'STEAK-ETH Uni-LP',
     tokenSymbol: 'STEAK',
-    icon: '🥩',
+    icon: Img,  
+    icon2: Img2,
   },
   {
     pid: 0,
@@ -90,7 +93,8 @@ export const supportedPools = [
     name: 'Tomahawk',
     symbol: 'ETH-HEDG Uni-LP',
     tokenSymbol: 'HEDG',
-    icon: '🐢',
+    icon: Img,
+    icon2: Img,
   },
   {
     pid: 1,
@@ -104,6 +108,7 @@ export const supportedPools = [
     symbol: 'LINK-ETH Uni-LP',
     tokenSymbol: 'LINK',
     icon: '🐌',
+    icon2: Img,
   },
   {
     pid: 2,
@@ -117,6 +122,7 @@ export const supportedPools = [
     symbol: 'SNX-ETH Uni-LP',
     tokenSymbol: 'SNX',
     icon: '🦆',
+    icon2: Img,
   },
   {
     pid: 3,
@@ -130,6 +136,7 @@ export const supportedPools = [
     symbol: 'LEND-ETH Uni-LP',
     tokenSymbol: 'LEND',
     icon: '🦍',
+    icon2: Img,
   },
   {
     pid: 4,
@@ -143,6 +150,7 @@ export const supportedPools = [
     symbol: 'COMP-ETH Uni-LP',
     tokenSymbol: 'COMP',
     icon: '🦑',
+    icon2: Img,
   },
   {
     pid: 5,
@@ -156,5 +164,6 @@ export const supportedPools = [
     symbol: 'YFI-ETH Uni-LP',
     tokenSymbol: 'YFI',
     icon: '🦖',
+    icon2: Img,
   },
 ]

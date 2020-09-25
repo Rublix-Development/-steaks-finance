@@ -58,7 +58,7 @@ const StakeSteak: React.FC<StakeProps> = ({}) => {
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>👨🏻‍🍳</CardIcon>
+            <CardIcon>🤠</CardIcon>
             <Value value={getBalanceNumber(tokenBalance)}/>
             <Label text={`STEAK Tokens Available`}/>
           </StyledCardHeader>

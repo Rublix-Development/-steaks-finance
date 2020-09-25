@@ -128,12 +128,12 @@ const Balances: React.FC = () => {
 const Footnote = styled.div`
   font-size: 14px;
   padding: 8px 20px;
-  color: ${(props) => props.theme.color.grey[400]};
+  color: #fff;
   border-top: solid 1px ${(props) => props.theme.color.grey[300]};
 `
 const FootnoteValue = styled.div`
   font-family: 'Roboto Mono', monospace;
-  float: right;
+  float: right;  
 `
 
 const StyledWrapper = styled.div`
