@@ -5,7 +5,7 @@ import Container from '../Container'
 import Spacer from '../../components/Spacer'
 
 interface PageHeaderProps {
-  icon: React.ReactNode
+  icon?: React.ReactNode
   subtitle?: string
   title?: string
 }
@@ -34,7 +34,7 @@ const StyledPageHeader = styled.div`
 
 const StyledIcon = styled.div`
   font-size: 120px;
-  height: 120px;
+  
   line-height: 120px;
   text-align: center; 
 `

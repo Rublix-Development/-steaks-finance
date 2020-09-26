@@ -142,18 +142,21 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
             </StyledDetails>
             <Spacer />
+            <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
             <Button
               disabled={!poolActive}
               text={poolActive ? 'Select' : undefined}
               to={`/farms/${farm.id}`}
-            >
+            >              
               {!poolActive && (
                 <Countdown
                   date={new Date(startTime * 1000)}
                   renderer={renderer}
                 />
               )}
+              
             </Button>
+            </div>
             <StyledInsight>
               <span>APY</span>
               <span>

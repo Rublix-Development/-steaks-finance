@@ -27,7 +27,8 @@ code {
 .red-button > button{
   background-color: #CC3E30;
   box-shadow: 0 0 6px 1px #7E0000;
-  border-radius: 10px;
+  border-radius: 10px;  
+  width: -webkit-fill-available;
 }
 
 .red-button > button:hover{

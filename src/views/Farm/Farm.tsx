@@ -12,7 +12,7 @@ import { getMasterChefContract } from '../../steak/utils'
 import { getContract } from '../../utils/erc20'
 import Harvest from './components/Harvest'
 import Stake from './components/Stake'
-import chef from '../../assets/img/Cowboy.png'
+import chef from '../../assets/img/Gold-star.png'
 
 const Farm: React.FC = () => {
   const { farmId } = useParams()
@@ -59,8 +59,7 @@ const Farm: React.FC = () => {
 
   return (
     <>
-      <PageHeader
-        icon={<img src={chef.toString()} height="120" />}
+      <PageHeader        
         subtitle={`Deposit ${lpTokenName}  Tokens and earn ${earnTokenName}`}
         title={name}
       />
