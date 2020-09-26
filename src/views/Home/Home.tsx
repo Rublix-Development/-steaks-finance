@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import chef from '../../assets/img/Cowboy-hat.png'
+import chef from '../../assets/img/chef.png'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'
@@ -21,10 +21,7 @@ const Home: React.FC = () => {
         <Balances />
       </Container>
       <Spacer size="md" />
-      <StyledInfo>
-        🏆<b>Pro Tip</b>: HEDG-ETH UNI-V2 LP token pool yields 2x token
-        rewards per block.
-      </StyledInfo>
+     
       <Spacer size="lg" />
       <div className="red-button"
         style={{
@@ -32,6 +29,7 @@ const Home: React.FC = () => {
         }}
       >
         <Button text="See the Menu" to="/farms" variant="secondary" />
+        <Spacer size="lg" />
       </div>
     </Page>
   )

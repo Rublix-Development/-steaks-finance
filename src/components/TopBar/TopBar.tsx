@@ -37,7 +37,7 @@ const StyledLogoWrapper = styled.div`
 
 const StyledTopBar = styled.div`
 border-bottom: 1px solid #b4b4b4;
-padding: 5px;
+background-color: #ffffffE6;
 `
 
 const StyledTopBarInner = styled.div`

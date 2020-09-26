@@ -73,24 +73,28 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName }) => {
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>👨🏻‍🍳</CardIcon>
+            <CardIcon>🤠‍</CardIcon>
             <Value value={getBalanceNumber(stakedBalance)} />
             <Label text={`${tokenName} Tokens Staked`} />
           </StyledCardHeader>
           <StyledCardActions>
             {!allowance.toNumber() ? (
+              <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
               <Button
                 disabled={requestedApproval}
                 onClick={handleApprove}
-                text={`Approve ${tokenName}`}
+            text={`Approve `}
               />
+              </div>
             ) : (
               <>
+              <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
                 <Button
                   disabled={stakedBalance.eq(new BigNumber(0))}
                   text="Unstake"
                   onClick={onPresentWithdraw}
                 />
+              </div>
                 <StyledActionSpacer />
                 <IconButton onClick={onPresentDeposit}>
                   <AddIcon />

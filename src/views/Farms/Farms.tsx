@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 
-import chef from '../../assets/img/Cowboy-hat.png'
+import chef from '../../assets/img/Gold-star.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'
@@ -25,8 +25,7 @@ const Farms: React.FC = () => {
         {!!account ? (
           <>
             <Route exact path={path}>
-              <PageHeader
-                icon={<img src={chef} height="120" />}
+              <PageHeader                
                 subtitle="You’re not a real cowboy until you’ve fallen off a horse three times."               
               />
               <FarmCards />

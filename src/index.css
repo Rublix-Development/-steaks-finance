@@ -1,8 +1,24 @@
+@font-face {
+  font-family:"kandal-bold";
+  src:url("https://use.typekit.net/af/a00951/00000000000000000001739a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/a00951/00000000000000000001739a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/a00951/00000000000000000001739a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:700;
+  }
+
+  @font-face {
+    font-family:"kandal";
+    src:url("https://use.typekit.net/af/babbda/000000000000000000017396/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/babbda/000000000000000000017396/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/babbda/000000000000000000017396/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
+    }
+  
+@font-face {font-family: "Stern"; src: url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.eot"); src: url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.woff") format("woff"), url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.svg#Stern") format("svg"); }
+
 body {
   background-image:url('assets/img/Bg.png');
+  background-attachment: fixed;
   background-color: #F3F3F3;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
@@ -24,10 +40,34 @@ code {
 
 .red-button > button{
   background-color: #CC3E30;
-  box-shadow: 2px 2px #7E0000;
+  box-shadow: 0 0 6px 1px #7E0000;
+  border-radius: 10px;  
+  width: -webkit-fill-available;
 }
 
 .red-button > button:hover{
-  background-color: #c4291a; 
-  box-shadow: 1px 1px #7E0000;
+  background-color: #EC1119; 
+  box-shadow: 0 0 6px 1px #7E0000;
+  border-radius: 10px;
+}
+
+.inline-icons{
+  display: inline-flex;
+  grid-gap: 0;
+}
+
+.icon-margin{
+  margin-top: 8px;
+}
+
+.star-background{
+  background-image: url('assets/img/Gold-star.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inline-icons > .star-background{
+  background-image: none;
+  width: 80px;
 }

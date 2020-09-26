@@ -128,29 +128,35 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.tokenSymbol === 'STEAK' && <StyledCardAccent />}
+      {farm.tokenSymbol === 'STEAK' && <StyledCardAccent />}      
       <Card>
         <CardContent>
           <StyledContent>
-            <CardIcon>{farm.icon}</CardIcon>
+            <div className="inline-icons">
+              <CardIcon> <img src={farm.icon.toString()} width="55" className='icon-margin' /> </CardIcon>
+              <CardIcon> <img src={farm.icon2.toString()} width="55" className='icon-margin' /> </CardIcon>
+            </div>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>
               <StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail>
               <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
             </StyledDetails>
             <Spacer />
+            <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
             <Button
               disabled={!poolActive}
               text={poolActive ? 'Select' : undefined}
               to={`/farms/${farm.id}`}
-            >
+            >              
               {!poolActive && (
                 <Countdown
                   date={new Date(startTime * 1000)}
                   renderer={renderer}
                 />
               )}
+              
             </Button>
+            </div>
             <StyledInsight>
               <span>APY</span>
               <span>

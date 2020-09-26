@@ -29,6 +29,7 @@ const Harvest: React.FC<HarvestProps> = ({ pid }) => {
             <Label text="STEAK Earned" />
           </StyledCardHeader>
           <StyledCardActions>
+          <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
             <Button
               disabled={!earnings.toNumber() || pendingTx}
               text={pendingTx ? 'Collecting STEAK' : 'Harvest'}
@@ -38,6 +39,7 @@ const Harvest: React.FC<HarvestProps> = ({ pid }) => {
                 setPendingTx(false)
               }}
             />
+            </div>
           </StyledCardActions>
         </StyledCardContentInner>
       </CardContent>
