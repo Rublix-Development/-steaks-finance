@@ -133,8 +133,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
         <CardContent>
           <StyledContent>
             <div className="inline-icons">
-              <CardIcon> <img src={farm.icon.toString()} width="32" /> </CardIcon>
-              <CardIcon> <img src={farm.icon2.toString()} width="32" /> </CardIcon>
+              <CardIcon> <img src={farm.icon.toString()} width="32" className='icon-margin' /> </CardIcon>
+              <CardIcon> <img src={farm.icon2.toString()} width="32" className='icon-margin' /> </CardIcon>
             </div>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>

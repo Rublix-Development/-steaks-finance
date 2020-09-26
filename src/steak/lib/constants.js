@@ -1,6 +1,14 @@
 import BigNumber from 'bignumber.js/bignumber'
 import Img from '../../assets/img/Star.png'
 import Img2 from '../../assets/img/Gold-star.png'
+import eth from '../../assets/img/eth.png'
+import hedge from '../../assets/img/hedge.png'
+import uni from '../../assets/img/uni.png'
+import link from '../../assets/img/link.png'
+import snx from '../../assets/img/snx.png'
+import lend from '../../assets/img/lend.png'
+import comp from '../../assets/img/comp.png'
+import yfi from '../../assets/img/yfi.png'
 
 export const SUBTRACT_GAS_LIMIT = 100000
 
@@ -79,8 +87,8 @@ export const supportedPools = [
     name: 'Steak Party!',
     symbol: 'STEAK-ETH Uni-LP',
     tokenSymbol: 'STEAK',
-    icon: Img,  
-    icon2: Img2,
+    icon: eth,  
+    icon2: uni,
   },
   {
     pid: 0,
@@ -93,8 +101,8 @@ export const supportedPools = [
     name: 'Tomahawk',
     symbol: 'ETH-HEDG Uni-LP',
     tokenSymbol: 'HEDG',
-    icon: Img,
-    icon2: Img,
+    icon: hedge,
+    icon2: uni,
   },
   {
     pid: 1,
@@ -107,8 +115,8 @@ export const supportedPools = [
     name: 'Porterhouse',
     symbol: 'LINK-ETH Uni-LP',
     tokenSymbol: 'LINK',
-    icon: '🐌',
-    icon2: Img,
+    icon: link,
+    icon2: uni,
   },
   {
     pid: 2,
@@ -121,8 +129,8 @@ export const supportedPools = [
     name: 'Kobe',
     symbol: 'SNX-ETH Uni-LP',
     tokenSymbol: 'SNX',
-    icon: '🦆',
-    icon2: Img,
+    icon: snx,
+    icon2: uni,
   },
   {
     pid: 3,
@@ -135,8 +143,8 @@ export const supportedPools = [
     name: 'Wagyu',
     symbol: 'LEND-ETH Uni-LP',
     tokenSymbol: 'LEND',
-    icon: '🦍',
-    icon2: Img,
+    icon: lend,
+    icon2: uni,
   },
   {
     pid: 4,
@@ -149,8 +157,8 @@ export const supportedPools = [
     name: 'Ribeye',
     symbol: 'COMP-ETH Uni-LP',
     tokenSymbol: 'COMP',
-    icon: '🦑',
-    icon2: Img,
+    icon: comp,
+    icon2: uni,
   },
   {
     pid: 5,
@@ -163,7 +171,7 @@ export const supportedPools = [
     name: 'New York Strip',
     symbol: 'YFI-ETH Uni-LP',
     tokenSymbol: 'YFI',
-    icon: '🦖',
-    icon2: Img,
+    icon: yfi,
+    icon2: uni,
   },
 ]

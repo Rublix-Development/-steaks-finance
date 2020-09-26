@@ -40,3 +40,7 @@ code {
   display: flex;
   grid-gap: 15px;
 }
+
+.icon-margin{
+  margin-top: 8px;
+}
