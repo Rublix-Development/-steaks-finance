@@ -45,6 +45,7 @@ const UnstakeXSteak: React.FC<HarvestProps> = ({lpContract}) => {
             <Label text="xSTEAK Available"/>
           </StyledCardHeader>
           <StyledCardActions>
+          <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
             <Button
               disabled={!xSteakBalance.toNumber() || pendingTx}
               text={pendingTx ? 'Converting to STEAK' : 'Convert to STEAK'}
@@ -54,6 +55,7 @@ const UnstakeXSteak: React.FC<HarvestProps> = ({lpContract}) => {
                 setPendingTx(false)
               }}
             />
+          </div>
           </StyledCardActions>
         </StyledCardContentInner>
       </CardContent>

@@ -103,7 +103,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   align-items: center;
   background-color: #DBA24F;
   border: 0; 
-  box-shadow: 0 0 6px 1px #ac6600;
+  box-shadow: 0 0 2px 1px #985a00;
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
@@ -119,7 +119,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   width: 100%;
   &:hover {
     background-color: #DBA24F;
-    box-shadow: 0 0 6px 0 #ac6600;    
+    box-shadow: 0 0 1px 0 #ac6600;    
   }
 `
 

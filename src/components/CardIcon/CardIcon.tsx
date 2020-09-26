@@ -7,12 +7,7 @@ interface CardIconProps {
 }
 
 const CardIcon: React.FC<CardIconProps> = ({ children }) => (
-  <StyledCardIcon style={{  
-                    backgroundImage: "url(" + goldStar + ")",
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                  }}>
+  <StyledCardIcon className='star-background'>
     {children}
   </StyledCardIcon>
 )

@@ -16,7 +16,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
       <StyledPageHeader>
       <StyledIcon>{icon}</StyledIcon> 
       <Spacer size="md" />
-        <StyledSubtitle><img src={redStar} className="redStar" width="32" /> {subtitle} <img src={redStar} className="redStar" width="32" /> </StyledSubtitle>
+        <StyledSubtitle><img src={redStar} className="redStar" width="40" /> {subtitle} <img src={redStar} className="redStar" width="40" /> </StyledSubtitle>
       </StyledPageHeader>
     </Container>
   )
@@ -51,12 +51,13 @@ const StyledTitle = styled.h1`
 
 const StyledSubtitle = styled.h3`
   color:  #fff;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 400;
   margin: 0;
   margin-top: 10px;
   padding: 0;
   text-align: center;
+  font-family: Stern;
 `
 
 export default PageHeader

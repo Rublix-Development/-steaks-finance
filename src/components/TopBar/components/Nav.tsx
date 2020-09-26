@@ -31,6 +31,7 @@ const StyledLink = styled(NavLink)`
   padding-left: ${(props) => props.theme.spacing[3]}px;
   padding-right: ${(props) => props.theme.spacing[3]}px;
   text-decoration: none;
+  font-family: 'kandal-bold';
   &:hover {
     color: #EC1119;
   }

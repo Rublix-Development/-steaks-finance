@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import chef from '../../assets/img/Gold-star.png'
+import chef from '../../assets/img/chef.png'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'
@@ -29,6 +29,7 @@ const Home: React.FC = () => {
         }}
       >
         <Button text="See the Menu" to="/farms" variant="secondary" />
+        <Spacer size="lg" />
       </div>
     </Page>
   )

@@ -64,18 +64,22 @@ const StakeSteak: React.FC<StakeProps> = ({}) => {
           </StyledCardHeader>
           <StyledCardActions>
             {!allowance.toNumber() ? (
+              <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
               <Button
                 disabled={requestedApproval}
                 onClick={handleApprove}
                 text={`Approve STEAK`}
               />
+              </div>
             ) : (
               <>
+              <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
                 <Button
                   disabled={tokenBalance.eq(new BigNumber(0))}
                   text="Convert to xSTEAK"
                   onClick={onPresentDeposit}
                 />
+                </div>
                 <StyledActionSpacer/>
               </>
             )}
