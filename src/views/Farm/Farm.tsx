@@ -84,7 +84,7 @@ const Farm: React.FC = () => {
         <Spacer size="sm" />
         <StyledLink
           target="__blank"
-          href={`https://steakswap.info/pair/${lpTokenAddress}`}
+          href={`https://uniswap.info/pair/${lpTokenAddress}`}
         >
           {lpTokenName} Info
         </StyledLink>
