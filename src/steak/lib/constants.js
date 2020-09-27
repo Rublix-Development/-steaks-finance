@@ -9,6 +9,7 @@ import snx from '../../assets/img/snx.png'
 import lend from '../../assets/img/lend.png'
 import comp from '../../assets/img/comp.png'
 import yfi from '../../assets/img/yfi.png'
+import steak from '../../assets/img/steak.png'
 
 export const SUBTRACT_GAS_LIMIT = 100000
 
@@ -87,7 +88,7 @@ export const supportedPools = [
     name: 'Steak Party!',
     symbol: 'STEAK-ETH Uni-LP',
     tokenSymbol: 'STEAK',
-    icon: '🥩',  
+    icon: steak,  
     icon2: eth,
   },
   {

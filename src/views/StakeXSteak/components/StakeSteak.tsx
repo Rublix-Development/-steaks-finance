@@ -16,6 +16,7 @@ import useEnter from "../../../hooks/useEnter";
 import useLeave from "../../../hooks/useLeave";
 import useAllowanceStaking from "../../../hooks/useAllowanceStaking";
 import useApproveStaking from "../../../hooks/useApproveStaking";
+import steakIcon from '../../../assets/img/steak.png'
 
 interface StakeProps {
 }
@@ -58,7 +59,7 @@ const StakeSteak: React.FC<StakeProps> = ({}) => {
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>🤠</CardIcon>
+            <CardIcon><img src={steakIcon} width="40" style={{ margin: '8px 0 0 0' }} /></CardIcon>
             <Value value={getBalanceNumber(tokenBalance)}/>
             <Label text={`STEAK Tokens Available`}/>
           </StyledCardHeader>
