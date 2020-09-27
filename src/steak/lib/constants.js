@@ -64,7 +64,7 @@ export const uniswapPools = {
   YFI_ETH: '0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28',
   // STEAK_ETH: '',
   LEND_ETH: '0xaB3F9bF1D81ddb224a2014e98B238638824bCf20',
-  WBTC_ETH: '0x004375Dff511095CC5A197A54140a24eFEF3A416',
+  WBTC_ETH: '0xBb2b8038a1640196FbE3e38816F3e67Cba72D940',
   SNX_ETH: '0x43AE24960e5534731Fc831386c07755A2dc33D47',
 }
 
@@ -86,7 +86,7 @@ export const contractAddresses = {
 
 export const supportedPools = [
   // {
-  //   pid: 7,
+  //   pid: 8,
   //   lpAddresses: {
   //     1: uniswapPools.STEAK_ETH,
   //   },
@@ -130,16 +130,16 @@ export const supportedPools = [
   {
     pid: 2,
     lpAddresses: {
-      1: uniswapPools.USDC_WBTC,
+      1: uniswapPools.WBTC_ETH,
     },
     tokenAddresses: {
-      1: addressMap.USDC,
+      1: addressMap.WBTC,
     },
     name: 'Kobe',
-    symbol: 'USDC-WBTC Uni-LP',
-    tokenSymbol: 'USDC',
-    icon: USDC,
-    icon2: wbtc,
+    symbol: 'WBTC-ETH Uni-LP',
+    tokenSymbol: 'WBTC',
+    icon: wbtc,
+    icon2: eth,
   },
   {
     pid: 3,
