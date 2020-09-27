@@ -15,22 +15,25 @@ const Nav: React.FC = () => {
         target="_blank"
         href="https://etherscan.io/address/#code"
       >
-        MasterChef Contract
+        Contract
       </StyledLink>
       <StyledLink
         target="_blank"
-        href="https://uniswap.info/pair/"
+        href="https://t.me/steaksfinancechat"
       >
-        Uniswap STEAK-ETH
+        Telegram
       </StyledLink>
-      <StyledLink target="_blank" href="">
+      <StyledLink target="_blank" href="https://discord.gg/5Z2Qae">
         Discord
       </StyledLink>
       <StyledLink target="_blank" href="https://github.com/rublixdev/steaks-protocol">
         Github
       </StyledLink>
-      <StyledLink target="_blank" href="https://twitter.com/hedgetradehq">
+      <StyledLink target="_blank" href="https://twitter.com/steaksfinance">
         Twitter
+      </StyledLink>
+      <StyledLink target="_blank" href="https://medium.com/@steaksfinance">
+        Medium
       </StyledLink>
     </StyledNav>
   )

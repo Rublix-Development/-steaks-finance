@@ -64,10 +64,10 @@ const StakeXSteak: React.FC = () => {
         <StyledCardsWrapper>
           <StyledCardWrapper>
             <StyledInfo>
-              ℹ️️ You will earn a portion of the swaps fees based on the amount
-              of xSteak held relative the weight of the staking. xSteak can be minted
-              by staking Steak. To redeem Stake staked plus swap fees convert xSteak
-              back to STEAK. {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)}
+            You will earn a portion of the trading fees based on your prorata amount of xSTEAK held relative to the pool. 
+            xSteak can be minted by staking STEAK. You can redeem staked STEAK (plus earned fees) by converting xSTEAK 
+            back into STEAK. There are currently 1000 xSTEAK in the whole pool. 
+            {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)}
               xSTEAK in the whole pool.` : '' }
             </StyledInfo>
           </StyledCardWrapper>

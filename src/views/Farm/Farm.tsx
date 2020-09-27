@@ -79,8 +79,7 @@ const Farm: React.FC = () => {
         </StyledCardsWrapper>
         <Spacer size="lg" />
         <StyledInfo>
-          ⭐️ Every time you stake and unstake LP tokens, the contract will
-          automagically harvest STEAK rewards for you!
+          ⭐️ Every time you stake and unstake LP tokens, the contract will automatically reward STEAK tokens to you.
         </StyledInfo>        
         <Spacer size="sm" />
         <StyledLink

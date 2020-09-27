@@ -87,8 +87,8 @@ export const supportedPools = [
     name: 'Steak Party!',
     symbol: 'STEAK-ETH Uni-LP',
     tokenSymbol: 'STEAK',
-    icon: eth,  
-    icon2: uni,
+    icon: '🥩',  
+    icon2: eth,
   },
   {
     pid: 0,
@@ -101,8 +101,8 @@ export const supportedPools = [
     name: 'Tomahawk',
     symbol: 'ETH-HEDG Uni-LP',
     tokenSymbol: 'HEDG',
-    icon: hedge,
-    icon2: uni,
+    icon: eth,
+    icon2: hedge,
   },
   {
     pid: 1,
@@ -116,7 +116,7 @@ export const supportedPools = [
     symbol: 'LINK-ETH Uni-LP',
     tokenSymbol: 'LINK',
     icon: link,
-    icon2: uni,
+    icon2: eth,
   },
   {
     pid: 2,
@@ -130,7 +130,7 @@ export const supportedPools = [
     symbol: 'SNX-ETH Uni-LP',
     tokenSymbol: 'SNX',
     icon: snx,
-    icon2: uni,
+    icon2: eth,
   },
   {
     pid: 3,
@@ -144,7 +144,7 @@ export const supportedPools = [
     symbol: 'LEND-ETH Uni-LP',
     tokenSymbol: 'LEND',
     icon: lend,
-    icon2: uni,
+    icon2: eth,
   },
   {
     pid: 4,
@@ -158,7 +158,7 @@ export const supportedPools = [
     symbol: 'COMP-ETH Uni-LP',
     tokenSymbol: 'COMP',
     icon: comp,
-    icon2: uni,
+    icon2: eth,
   },
   {
     pid: 5,
@@ -172,6 +172,6 @@ export const supportedPools = [
     symbol: 'YFI-ETH Uni-LP',
     tokenSymbol: 'YFI',
     icon: yfi,
-    icon2: uni,
+    icon2: eth,
   },
 ]
