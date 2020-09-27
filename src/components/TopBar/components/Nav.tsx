@@ -24,14 +24,14 @@ const StyledNav = styled.nav`
 `
 
 const StyledLink = styled(NavLink)`
-  color: ${(props) => props.theme.color.menu[100]};
+  color: #312726;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
-  padding-left: ${(props) => props.theme.spacing[3]}px;
-  padding-right: ${(props) => props.theme.spacing[3]}px;
+  padding-left: 24px;
+  padding-right: 24px;
   text-decoration: none;
-  font-family: 'kandal-bold';
+  font-family: 'kandal';
   &:hover {
     color: #EC1119;
   }
@@ -50,6 +50,7 @@ const StyledAbsoluteLink = styled.a`
   padding-left: ${(props) => props.theme.spacing[3]}px;
   padding-right: ${(props) => props.theme.spacing[3]}px;
   text-decoration: none;
+  font-family: 'kandal';
   &:hover {
     color: ${(props) => props.theme.color.grey[500]};
   }

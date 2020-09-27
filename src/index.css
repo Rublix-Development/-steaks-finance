@@ -1,16 +1,10 @@
 @font-face {
-  font-family:"kandal-bold";
-  src:url("https://use.typekit.net/af/a00951/00000000000000000001739a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/a00951/00000000000000000001739a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/a00951/00000000000000000001739a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-  font-display:auto;font-style:normal;font-weight:700;
+  font-family:"kandal";
+  src:url("https://use.typekit.net/af/143aab/00000000000000000001739c/27/l?subset_id=2&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/143aab/00000000000000000001739c/27/d?subset_id=2&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/143aab/00000000000000000001739c/27/a?subset_id=2&fvd=n8&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:800;
   }
-
-  @font-face {
-    font-family:"kandal";
-    src:url("https://use.typekit.net/af/babbda/000000000000000000017396/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/babbda/000000000000000000017396/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/babbda/000000000000000000017396/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:400;
-    }
   
-@font-face {font-family: "Stern"; src: url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.eot"); src: url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.woff") format("woff"), url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/213800b8075aa58a3d3e95c45c27d1a0.svg#Stern") format("svg"); }
+@font-face {font-family: "Stern"; src: url("assets/fonts/CormorantUpright-Regular.ttf"); }
 
 body {
   background-image:url('assets/img/Bg.png');

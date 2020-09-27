@@ -13,7 +13,7 @@ const CardIcon: React.FC<CardIconProps> = ({ children }) => (
 )
 
 const StyledCardIcon = styled.div` 
-  font-size: 30px;
+  font-size: 24px;
   height: 95px;
   width: 100px;
   align-items: center;

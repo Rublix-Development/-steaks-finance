@@ -6,7 +6,7 @@ import chef from '../../assets/img/logo2.png'
 const Logo: React.FC = () => {
   return (
     <StyledLogo to="/">
-      <img src={chef} height="70" />
+      <img src={chef} height="50" />
      
     </StyledLogo>
   )

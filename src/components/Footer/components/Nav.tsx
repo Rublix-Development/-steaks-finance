@@ -50,6 +50,8 @@ const StyledLink = styled.a`
   padding-right: ${(props) => props.theme.spacing[3]}px;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'kandal';
+  font-size: 14px;
   &:hover {
     color: #CC3E30;
   }

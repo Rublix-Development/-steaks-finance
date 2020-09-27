@@ -9,6 +9,9 @@ import snx from '../../assets/img/snx.png'
 import lend from '../../assets/img/lend.png'
 import comp from '../../assets/img/comp.png'
 import yfi from '../../assets/img/yfi.png'
+import steak from '../../assets/img/steak.png'
+import USDC from '../../assets/img/USDC.png'
+import wbtc from '../../assets/img/wbtc.png'
 
 export const SUBTRACT_GAS_LIMIT = 100000
 
@@ -93,7 +96,7 @@ export const supportedPools = [
   //   name: 'Steak Party!',
   //   symbol: 'STEAK-ETH Uni-LP',
   //   tokenSymbol: 'STEAK',
-  //   icon: '🥩',  
+  //   icon: steak,  
   //   icon2: eth,
   // },
   {
@@ -121,7 +124,7 @@ export const supportedPools = [
     name: 'Porterhouse',
     symbol: 'USDC-ETH Uni-LP',
     tokenSymbol: 'USDC',
-    icon: eth, // usdc
+    icon: USDC,
     icon2: eth,
   },
   {
@@ -135,8 +138,8 @@ export const supportedPools = [
     name: 'Kobe',
     symbol: 'USDC-WBTC Uni-LP',
     tokenSymbol: 'USDC',
-    icon: eth, // usdc
-    icon2: eth, // wbtc
+    icon: USDC,
+    icon2: wbtc,
   },
   {
     pid: 3,
@@ -149,7 +152,7 @@ export const supportedPools = [
     name: 'Wagyu',
     symbol: 'LINK-ETH Uni-LP',
     tokenSymbol: 'LINK',
-    icon: eth, // link
+    icon: link, 
     icon2: eth,
   },
   {
@@ -163,7 +166,7 @@ export const supportedPools = [
     name: 'Ribeye',
     symbol: 'UNI-ETH Uni-LP',
     tokenSymbol: 'UNI',
-    icon: eth, // uni
+    icon: uni,
     icon2: eth,
   },
   {
