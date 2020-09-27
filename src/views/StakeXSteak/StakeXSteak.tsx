@@ -66,9 +66,7 @@ const StakeXSteak: React.FC = () => {
             <StyledInfo>
             You will earn a portion of the trading fees based on your prorata amount of xSTEAK held relative to the pool. 
             xSteak can be minted by staking STEAK. You can redeem staked STEAK (plus earned fees) by converting xSTEAK 
-            back into STEAK. There are currently 1000 xSTEAK in the whole pool. 
-            {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)}
-              xSTEAK in the whole pool.` : '' }
+            back into STEAK. {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)} xSTEAK in the whole pool.` : '' }
             </StyledInfo>
           </StyledCardWrapper>
         </StyledCardsWrapper>
