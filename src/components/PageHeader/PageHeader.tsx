@@ -51,7 +51,7 @@ const StyledTitle = styled.h1`
 
 const StyledSubtitle = styled.h3`
   color:  #fff;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
   margin: 0;
   margin-top: 10px;
