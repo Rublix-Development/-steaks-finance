@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
 
       <StyledLink
         target="_blank"
-        href="https://etherscan.io/address/#code"
+        href="https://etherscan.io/address/0xd58211d19f1A91a9a379D7BE4E20B4e4C3d42c17"
       >
         Contract
       </StyledLink>
