@@ -38,7 +38,6 @@ export const addressMap = {
   uniswapFactoryV2: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
   YFI: '0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e',
   YCRV: '0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8',
-  UNIAmpl: '0xc5be99a02c6857f9eac67bbce58df5572498f40c',
   WETH: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
   LINK: '0x514910771AF9Ca656af840dff83E8264EcF986CA',
   MKR: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
@@ -46,50 +45,57 @@ export const addressMap = {
   COMP: '0xc00e94Cb662C3520282E6f5717214004A7f26888',
   LEND: '0x80fB784B7eD66730e8b1DBd9820aFD29931aab03',
   HEDG: '0xF1290473E210b2108A85237fbCd7b6eb42Cc654F',
-  STEAK: '0xF1290473E210b2108A85237fbCd7b6eb42Cc654F',     // TODO: CHANGE
+  UNI: '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984',
+  USDC: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  WBTC: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
+  STEAK: '0xeED9e4F2450035D6426276a8aA2084966EE3b1bb',
 }
 
 export const uniswapPools = {
   HEDG_ETH: '0xDA73Ce7778C87131B6aD4210999De8d93B0a28e9',
+  USDC_ETH: '0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc',
+  USDC_WBTC: '0x004375Dff511095CC5A197A54140a24eFEF3A416',
   LINK_ETH: '0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974',
-  SNX_ETH: '0x43AE24960e5534731Fc831386c07755A2dc33D47',
-  LEND_ETH: '0xaB3F9bF1D81ddb224a2014e98B238638824bCf20',
+  UNI_ETH: '0xd3d2E2692501A5c9Ca623199D38826e513033a17',
   COMP_ETH: '0xCFfDdeD873554F362Ac02f8Fb1f02E5ada10516f',
   YFI_ETH: '0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28',
-  STEAK_ETH: '0xDA73Ce7778C87131B6aD4210999De8d93B0a28e9', // TODO: CHANGE
+  // STEAK_ETH: '',
+  LEND_ETH: '0xaB3F9bF1D81ddb224a2014e98B238638824bCf20',
+  WBTC_ETH: '0x004375Dff511095CC5A197A54140a24eFEF3A416',
+  SNX_ETH: '0x43AE24960e5534731Fc831386c07755A2dc33D47',
 }
 
 export const contractAddresses = {
   steak: {
-    1: '0x0F854835ba614D5460bfe0e910921185482052d9',
+    1: '0xeED9e4F2450035D6426276a8aA2084966EE3b1bb',
   },
   masterChef: {
-    1: '0xFD01f7a212eAa4aCAdB986fCb74951D510594c8E',
+    1: '0xd58211d19f1A91a9a379D7BE4E20B4e4C3d42c17',
   },
   weth: {
     1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
   },
   xSteak: {
-    1: '0x9105a5AaD9601da88CB1f0a8152b2Ed950Fb5117'
+    1: '0x6810536A08D00d51c2C48e0a06537A26828718ba'
   }
 }
 
 
 export const supportedPools = [
-  {
-    pid: 6,
-    lpAddresses: {
-      1: uniswapPools.STEAK_ETH,
-    },
-    tokenAddresses: {
-      1: addressMap.STEAK,
-    },
-    name: 'Steak Party!',
-    symbol: 'STEAK-ETH Uni-LP',
-    tokenSymbol: 'STEAK',
-    icon: '🥩',  
-    icon2: eth,
-  },
+  // {
+  //   pid: 7,
+  //   lpAddresses: {
+  //     1: uniswapPools.STEAK_ETH,
+  //   },
+  //   tokenAddresses: {
+  //     1: addressMap.STEAK,
+  //   },
+  //   name: 'Steak Party!',
+  //   symbol: 'STEAK-ETH Uni-LP',
+  //   tokenSymbol: 'STEAK',
+  //   icon: '🥩',  
+  //   icon2: eth,
+  // },
   {
     pid: 0,
     lpAddresses: {
@@ -101,53 +107,67 @@ export const supportedPools = [
     name: 'Tomahawk',
     symbol: 'ETH-HEDG Uni-LP',
     tokenSymbol: 'HEDG',
-    icon: eth,
-    icon2: hedge,
+    icon: hedge,
+    icon2: eth,
   },
   {
     pid: 1,
+    lpAddresses: {
+      1: uniswapPools.USDC_ETH,
+    },
+    tokenAddresses: {
+      1: addressMap.USDC,
+    },
+    name: 'Porterhouse',
+    symbol: 'USDC-ETH Uni-LP',
+    tokenSymbol: 'USDC',
+    icon: eth, // usdc
+    icon2: eth,
+  },
+  {
+    pid: 2,
+    lpAddresses: {
+      1: uniswapPools.USDC_WBTC,
+    },
+    tokenAddresses: {
+      1: addressMap.USDC,
+    },
+    name: 'Kobe',
+    symbol: 'USDC-WBTC Uni-LP',
+    tokenSymbol: 'USDC',
+    icon: eth, // usdc
+    icon2: eth, // wbtc
+  },
+  {
+    pid: 3,
     lpAddresses: {
       1: uniswapPools.LINK_ETH,
     },
     tokenAddresses: {
       1: addressMap.LINK,
     },
-    name: 'Porterhouse',
+    name: 'Wagyu',
     symbol: 'LINK-ETH Uni-LP',
     tokenSymbol: 'LINK',
-    icon: link,
-    icon2: eth,
-  },
-  {
-    pid: 2,
-    lpAddresses: {
-      1: uniswapPools.SNX_ETH,
-    },
-    tokenAddresses: {
-      1: addressMap.SNX,
-    },
-    name: 'Kobe',
-    symbol: 'SNX-ETH Uni-LP',
-    tokenSymbol: 'SNX',
-    icon: snx,
-    icon2: eth,
-  },
-  {
-    pid: 3,
-    lpAddresses: {
-      1: uniswapPools.LEND_ETH,
-    },
-    tokenAddresses: {
-      1: addressMap.LEND,
-    },
-    name: 'Wagyu',
-    symbol: 'LEND-ETH Uni-LP',
-    tokenSymbol: 'LEND',
-    icon: lend,
+    icon: eth, // link
     icon2: eth,
   },
   {
     pid: 4,
+    lpAddresses: {
+      1: uniswapPools.UNI_ETH,
+    },
+    tokenAddresses: {
+      1: addressMap.UNI,
+    },
+    name: 'Ribeye',
+    symbol: 'UNI-ETH Uni-LP',
+    tokenSymbol: 'UNI',
+    icon: eth, // uni
+    icon2: eth,
+  },
+  {
+    pid: 5,
     lpAddresses: {
       1: uniswapPools.COMP_ETH,
     },
@@ -161,7 +181,7 @@ export const supportedPools = [
     icon2: eth,
   },
   {
-    pid: 5,
+    pid: 6,
     lpAddresses: {
       1: uniswapPools.YFI_ETH,
     },
