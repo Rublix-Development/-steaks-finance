@@ -17,29 +17,29 @@ const Input: React.FC<InputProps> = ({
   value,
 }) => {
   return (
-    <StyledInputWrapper>
+    <StyledInputWrapper>   
       {!!startAdornment && startAdornment}
-      <StyledInput placeholder={placeholder} value={value} onChange={onChange} />
-      {!!endAdornment && endAdornment}
+      <StyledInput placeholder={placeholder} value={value} onChange={onChange} />      
+      {!!endAdornment && endAdornment}      
     </StyledInputWrapper>
   )
 }
 
 const StyledInputWrapper = styled.div`
   align-items: center;
-  background-color: ${props => props.theme.color.grey[200]};
-  border-radius: ${props => props.theme.borderRadius}px;
-  box-shadow: inset 4px 4px 8px ${props => props.theme.color.grey[300]},
-    inset -6px -6px 12px ${props => props.theme.color.grey[100]};
+  background-color: #fff;
+  border-radius: ${props => props.theme.borderRadius}px;  
   display: flex;
   height: 72px;
+  margin: 0 26px;
   padding: 0 ${props => props.theme.spacing[3]}px;
+  color: #000;
 `
 
 const StyledInput = styled.input`
   background: none;
   border: 0;
-  color: ${props => props.theme.color.grey[600]};
+  color: #000;
   font-size: 18px;
   flex: 1;
   height: 56px;

@@ -23,7 +23,7 @@ const TokenInput: React.FC<TokenInputProps> = ({
       <Input
         endAdornment={(
           <StyledTokenAdornmentWrapper>
-            <StyledTokenSymbol>{symbol}</StyledTokenSymbol>
+            
             <StyledSpacer />
             <div>
               <Button size="sm" text="Max" onClick={onSelectMax} />
@@ -65,9 +65,11 @@ const StyledMaxText = styled.div`
   font-weight: 700;
   height: 44px;
   justify-content: flex-end;
+  padding-right:28px;
 `
 
 const StyledTokenSymbol = styled.span`
+
   color: ${props => props.theme.color.grey[600]};
   font-weight: 700;
 `
