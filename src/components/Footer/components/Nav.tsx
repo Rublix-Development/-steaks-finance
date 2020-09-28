@@ -23,7 +23,7 @@ const Nav: React.FC = () => {
       >
         Telegram
       </StyledLink>
-      <StyledLink target="_blank" href="https://discord.gg/5Z2Qae">
+      <StyledLink target="_blank" href="https://discord.com/invite/S6yzU4Z">
         Discord
       </StyledLink>
       <StyledLink target="_blank" href="https://github.com/rublixdev/steaks-protocol">
