@@ -128,7 +128,7 @@ export const supportedPools = [
     icon2: eth,
   },
   {
-    pid: 2,
+    pid: 7,
     lpAddresses: {
       1: uniswapPools.WBTC_ETH,
     },
