@@ -163,7 +163,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: addressMap.UNI,
     },
-    name: 'Ribeye',
+    name: 'Filet',
     symbol: 'UNI-ETH Uni-LP',
     tokenSymbol: 'UNI',
     icon: uni,

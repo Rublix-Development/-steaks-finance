@@ -12,7 +12,7 @@ import { getMasterChefContract } from '../../steak/utils'
 import { getContract } from '../../utils/erc20'
 import Harvest from './components/Harvest'
 import Stake from './components/Stake'
-import chef from '../../assets/img/Gold-star.png'
+import chef from '../../assets/img/Gold-star.png' 
 
 const Farm: React.FC = () => {
   const { farmId } = useParams()
@@ -80,6 +80,8 @@ const Farm: React.FC = () => {
         <Spacer size="lg" />
         <StyledInfo>
           ⭐️ Every time you stake and unstake LP tokens, the contract will automatically reward STEAK tokens to you.
+          <br />
+          ⭐️ Approving, Staking and Harvesting transaction may take time to confirm on the Ethereum blockchain, check your wallet to see the transaction progress.
         </StyledInfo>        
         <Spacer size="sm" />
         <StyledLink

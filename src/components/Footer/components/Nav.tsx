@@ -32,7 +32,7 @@ const Nav: React.FC = () => {
       <StyledLink target="_blank" href="https://twitter.com/steaksfinance">
         Twitter
       </StyledLink>
-      <StyledLink target="_blank" href="https://medium.com/@steaksfinance">
+      <StyledLink target="_blank" href="https://medium.com/@steaksfinance/hedgetrade-introduces-steaks-finance-a-fair-launch-defi-token-protocol-with-lasting-power-fc87e428777f">
         Medium
       </StyledLink>
     </StyledNav>
