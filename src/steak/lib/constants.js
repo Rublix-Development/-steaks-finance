@@ -62,7 +62,7 @@ export const uniswapPools = {
   UNI_ETH: '0xd3d2E2692501A5c9Ca623199D38826e513033a17',
   COMP_ETH: '0xCFfDdeD873554F362Ac02f8Fb1f02E5ada10516f',
   YFI_ETH: '0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28',
-  // STEAK_ETH: '',
+  STEAK_ETH: '0x99b46782E350A37D2850fF3713bF29Ab3902CD31',
   LEND_ETH: '0xaB3F9bF1D81ddb224a2014e98B238638824bCf20',
   WBTC_ETH: '0xBb2b8038a1640196FbE3e38816F3e67Cba72D940',
   SNX_ETH: '0x43AE24960e5534731Fc831386c07755A2dc33D47',
@@ -85,20 +85,20 @@ export const contractAddresses = {
 
 
 export const supportedPools = [
-  // {
-  //   pid: 8,
-  //   lpAddresses: {
-  //     1: uniswapPools.STEAK_ETH,
-  //   },
-  //   tokenAddresses: {
-  //     1: addressMap.STEAK,
-  //   },
-  //   name: 'Steak Party!',
-  //   symbol: 'STEAK-ETH Uni-LP',
-  //   tokenSymbol: 'STEAK',
-  //   icon: steak,  
-  //   icon2: eth,
-  // },
+  {
+    pid: 8,
+    lpAddresses: {
+      1: uniswapPools.STEAK_ETH,
+    },
+    tokenAddresses: {
+      1: addressMap.STEAK,
+    },
+    name: 'Steak Party!',
+    symbol: 'STEAK-ETH Uni-LP',
+    tokenSymbol: 'STEAK',
+    icon: steak,
+    icon2: eth,
+  },
   {
     pid: 0,
     lpAddresses: {
