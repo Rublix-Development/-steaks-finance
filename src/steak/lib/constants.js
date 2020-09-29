@@ -66,6 +66,8 @@ export const uniswapPools = {
   LEND_ETH: '0xaB3F9bF1D81ddb224a2014e98B238638824bCf20',
   WBTC_ETH: '0xBb2b8038a1640196FbE3e38816F3e67Cba72D940',
   SNX_ETH: '0x43AE24960e5534731Fc831386c07755A2dc33D47',
+  USDC_STEAK: '0x48e130B740Af7D2bAc0Ee7E0dF95dcdC3F6eA162',
+  WBTC_STEAK: '0x82e51A70E199F5a25E56Ea55f4229DcdDB822AFD',
 }
 
 export const contractAddresses = {
@@ -98,6 +100,36 @@ export const supportedPools = [
     tokenSymbol: 'STEAK',
     icon: steak,
     icon2: eth,
+  },
+  {
+    pid: 9,
+    lpAddresses: {
+      1: uniswapPools.USDC_STEAK,
+    },
+    tokenAddresses: {
+      1: addressMap.USDC,
+      2: addressMap.STEAK,
+    },
+    name: 'BBQ Cookoff',
+    symbol: 'USDC-STEAK Uni-LP',
+    tokenSymbol: 'USDC',
+    icon: USDC,
+    icon2: steak,
+  },
+  {
+    pid: 10,
+    lpAddresses: {
+      1: uniswapPools.WBTC_STEAK,
+    },
+    tokenAddresses: {
+      1: addressMap.WBTC,
+      2: addressMap.STEAK,
+    },
+    name: 'The Steakhouse',
+    symbol: 'WBTC-STEAK Uni-LP',
+    tokenSymbol: 'WBTC',
+    icon: wbtc,
+    icon2: steak,
   },
   {
     pid: 0,

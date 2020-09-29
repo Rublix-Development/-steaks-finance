@@ -161,25 +161,18 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <span>APY</span>
               <span>
                 {farm.apy
-                  ? `${farm.apy
+                  ? ((farm.apy > new BigNumber(0)) ? `${farm.apy
                       .times(new BigNumber(100))
                       .toNumber()
                       .toLocaleString('en-US')
-                      .slice(0, -1)}%`
+                      .slice(0, -1)}%` : '0%')
                   : 'Loading ...'}
               </span>
-              {/* <span>
-                {farm.tokenAmount
-                  ? (farm.tokenAmount.toNumber() || 0).toLocaleString('en-US')
-                  : '-'}{' '}
-                {farm.tokenSymbol}
-              </span>
               <span>
-                {farm.wethAmount
-                  ? (farm.wethAmount.toNumber() || 0).toLocaleString('en-US')
-                  : '-'}{' '}
-                ETH
-              </span> */}
+                {(farm.wethAmount && farm.wethAmount > new BigNumber(0))
+                  ? (farm.wethAmount.toNumber() || 0).toLocaleString('en-US') + ' ETH'
+                  : (farm.tokenAmount ? farm.tokenAmount.toNumber() : 0).toLocaleString('en-US') + ' ' + farm.tokenSymbol}{' '}
+              </span>
             </StyledInsight>
           </StyledContent>
         </CardContent>
