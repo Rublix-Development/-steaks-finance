@@ -229,4 +229,19 @@ export const supportedPools = [
     icon: yfi,
     icon2: eth,
   },
+  {
+    pid: 11,
+    lpAddresses: {
+      1: uniswapPools.SNX_ETH,
+    },
+    tokenAddresses: {
+      1: addressMap.SNX,
+    },
+    name: 'Brisket',
+    symbol: 'SNX-ETH Uni-LP',
+    tokenSymbol: 'SNX',
+    icon: snx,
+    icon2: eth,
+  },
+
 ]
