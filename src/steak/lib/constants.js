@@ -68,6 +68,7 @@ export const uniswapPools = {
   SNX_ETH: '0x43AE24960e5534731Fc831386c07755A2dc33D47',
   USDC_STEAK: '0x48e130B740Af7D2bAc0Ee7E0dF95dcdC3F6eA162',
   WBTC_STEAK: '0x82e51A70E199F5a25E56Ea55f4229DcdDB822AFD',
+  USDC_HEDG: '0xFc2890ffB3069A1A9d3F7B11C7775a1A1ee721c0',
 }
 
 export const contractAddresses = {
@@ -144,6 +145,20 @@ export const supportedPools = [
     tokenSymbol: 'HEDG',
     icon: hedge,
     icon2: eth,
+  },
+  {
+    pid: 12,
+    lpAddresses: {
+      1: uniswapPools.USDC_HEDG,
+    },
+    tokenAddresses: {
+      1: addressMap.HEDG,
+    },
+    name: 'Tomahawk',
+    symbol: 'USDC-HEDG Uni-LP',
+    tokenSymbol: 'USDC',
+    icon: hedge,
+    icon2: USDC,
   },
   {
     pid: 1,
