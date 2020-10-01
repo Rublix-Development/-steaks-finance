@@ -69,6 +69,7 @@ export const uniswapPools = {
   USDC_STEAK: '0x48e130B740Af7D2bAc0Ee7E0dF95dcdC3F6eA162',
   WBTC_STEAK: '0x82e51A70E199F5a25E56Ea55f4229DcdDB822AFD',
   USDC_HEDG: '0xFc2890ffB3069A1A9d3F7B11C7775a1A1ee721c0',
+  HEDG_STEAK: '0xF5cAFa398bEB12dCCFBA917c19922C1EA2d6c056',
 }
 
 export const contractAddresses = {
@@ -154,11 +155,25 @@ export const supportedPools = [
     tokenAddresses: {
       1: addressMap.HEDG,
     },
-    name: 'Tomahawk',
+    name: 'Flank',
     symbol: 'USDC-HEDG Uni-LP',
     tokenSymbol: 'USDC',
     icon: hedge,
     icon2: USDC,
+  },
+  {
+    pid: 13,
+    lpAddresses: {
+      1: uniswapPools.HEDG_STEAK,
+    },
+    tokenAddresses: {
+      1: addressMap.HEDG,
+    },
+    name: 'T-bone',
+    symbol: 'HEDG-STEAK Uni-LP',
+    tokenSymbol: 'HEDG',
+    icon: hedge,
+    icon2: steak,
   },
   {
     pid: 1,
