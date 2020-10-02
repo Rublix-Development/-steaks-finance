@@ -16,9 +16,17 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
   return (
     <Container>
       <StyledPageHeader>
-      <button className='buySteak'>Buy <img src={steak} className="buyLogo" width="35" /> </button>
-      <StyledIcon>{icon}</StyledIcon> 
-      <button className='buyHedge'>Buy <img src={hedge} className="buyLogo" width="35" /></button>
+      <a href="https://uniswap.info/pair/0x99b46782e350a37d2850ff3713bf29ab3902cd31" target="_blank">
+        <button className='buySteak'>Buy <img src={steak} className="buyLogo" width="35" /> </button>
+      </a>
+     {icon != undefined
+      ? <StyledIcon className="mainIcon">{icon}</StyledIcon>     
+      : <StyledIcon></StyledIcon>
+     }
+      
+      <a href={'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xf1290473e210b2108a85237fbcd7b6eb42cc654f" target="_blank'} target="_blank">
+        <button className='buyHedge'>Buy <img src={hedge} className="buyLogo" width="35" /></button>
+      </a>
       <Spacer size="md" />
         <StyledSubtitle><img src={redStar} className="redStar" width="40" /> {subtitle} <img src={redStar} className="redStar" width="40" /> </StyledSubtitle>
       </StyledPageHeader>

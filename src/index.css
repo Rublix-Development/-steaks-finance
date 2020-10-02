@@ -66,12 +66,17 @@ code {
   width: 80px;
 }
 
+.mainIcon{
+  margin-left: 40px;
+  margin-right: 40px; 
+}
+
 .buySteak{
-  margin-right: 50px; 
+  margin-right: 20px;
 }
 
 .buyHedge{
-  margin-left: 50px; 
+  margin-left: 20px; 
 }
 
 .buySteak, .buyHedge{
