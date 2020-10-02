@@ -17,6 +17,7 @@ import useFarms from '../../../hooks/useFarms'
 import useSteak from '../../../hooks/useSteak'
 import { getEarned, getMasterChefContract } from '../../../steak/utils'
 import { bnToDec } from '../../../utils'
+import link from '../../../assets/img/linkIcon.png' 
 
 interface FarmWithStakedValue extends Farm, StakedValue {
   apy: BigNumber
@@ -132,6 +133,12 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
       <Card>
         <CardContent>
           <StyledContent>
+            <div className="linkIcon">
+              <a href={farm.link.toString()} target="_blank">
+                <img src={link} />
+              </a>
+            </div>           
+            
             <div className="inline-icons">
               <CardIcon> <img src={farm.icon.toString()} width="55" className='icon-margin' /> </CardIcon>
               <CardIcon> <img src={farm.icon2.toString()} width="55" className='icon-margin' /> </CardIcon>

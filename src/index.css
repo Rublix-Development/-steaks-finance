@@ -96,3 +96,9 @@ code {
   top: 8px;
   left: 6px;
 }
+
+.linkIcon{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
