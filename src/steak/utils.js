@@ -43,6 +43,7 @@ export const getFarms = (steak) => {
           symbol,
           icon,
           icon2,
+          link,
           tokenAddress,
           tokenSymbol,
           tokenContract,
@@ -62,6 +63,7 @@ export const getFarms = (steak) => {
           earnTokenAddress: steak.contracts.steak.options.address,
           icon,
           icon2,
+          link,
         }),
       )
     : []

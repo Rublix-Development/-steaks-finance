@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={<img src={chef} height={100} />}      
+        icon={<img src={chef} height={100} />}              
         subtitle="You’re not a real cowboy until you’ve fallen off a horse three times."
       />
 

@@ -102,6 +102,7 @@ export const supportedPools = [
     tokenSymbol: 'STEAK',
     icon: steak,
     icon2: eth,
+    link: 'https://uniswap.info/pair/0x99b46782e350a37d2850ff3713bf29ab3902cd31',
   },
   {
     pid: 9,
@@ -117,6 +118,7 @@ export const supportedPools = [
     tokenSymbol: 'USDC',
     icon: USDC,
     icon2: steak,
+    link: 'https://uniswap.info/pair/0x48e130b740af7d2bac0ee7e0df95dcdc3f6ea162',
   },
   {
     pid: 10,
@@ -132,6 +134,7 @@ export const supportedPools = [
     tokenSymbol: 'WBTC',
     icon: wbtc,
     icon2: steak,
+    link: 'https://uniswap.info/pair/0x82e51a70e199f5a25e56ea55f4229dcddb822afd',
   },
   {
     pid: 0,
@@ -146,6 +149,7 @@ export const supportedPools = [
     tokenSymbol: 'HEDG',
     icon: hedge,
     icon2: eth,
+    link: 'https://uniswap.info/pair/0xda73ce7778c87131b6ad4210999de8d93b0a28e9',
   },
   {
     pid: 12,
@@ -160,6 +164,7 @@ export const supportedPools = [
     tokenSymbol: 'USDC',
     icon: hedge,
     icon2: USDC,
+    link: 'https://uniswap.info/pair/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
   },
   {
     pid: 13,
@@ -174,6 +179,7 @@ export const supportedPools = [
     tokenSymbol: 'HEDG',
     icon: hedge,
     icon2: steak,
+    link: 'https://uniswap.info/pair/0xf5cafa398beb12dccfba917c19922c1ea2d6c056',
   },
   {
     pid: 1,
@@ -188,6 +194,7 @@ export const supportedPools = [
     tokenSymbol: 'USDC',
     icon: USDC,
     icon2: eth,
+    link: 'https://uniswap.info/pair/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
   },
   {
     pid: 7,
@@ -202,6 +209,7 @@ export const supportedPools = [
     tokenSymbol: 'WBTC',
     icon: wbtc,
     icon2: eth,
+    link: 'https://uniswap.info/pair/0xbb2b8038a1640196fbe3e38816f3e67cba72d940',
   },
   {
     pid: 3,
@@ -216,6 +224,7 @@ export const supportedPools = [
     tokenSymbol: 'LINK',
     icon: link, 
     icon2: eth,
+    link: 'https://uniswap.info/pair/0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974',
   },
   {
     pid: 4,
@@ -230,6 +239,7 @@ export const supportedPools = [
     tokenSymbol: 'UNI',
     icon: uni,
     icon2: eth,
+    link: 'https://uniswap.info/pair/0xd3d2e2692501a5c9ca623199d38826e513033a17'
   },
   {
     pid: 5,
@@ -244,6 +254,7 @@ export const supportedPools = [
     tokenSymbol: 'COMP',
     icon: comp,
     icon2: eth,
+    link: 'https://uniswap.info/pair/0xcffdded873554f362ac02f8fb1f02e5ada10516f'
   },
   {
     pid: 6,
@@ -258,6 +269,7 @@ export const supportedPools = [
     tokenSymbol: 'YFI',
     icon: yfi,
     icon2: eth,
+    link: 'https://uniswap.info/pair/0x2fdbadf3c4d5a8666bc06645b8358ab803996e28'
   },
   {
     pid: 11,
@@ -272,6 +284,7 @@ export const supportedPools = [
     tokenSymbol: 'SNX',
     icon: snx,
     icon2: eth,
+    link: 'https://uniswap.info/pair/0x43ae24960e5534731fc831386c07755a2dc33d47'
   },
 
 ]

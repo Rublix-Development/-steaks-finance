@@ -3,9 +3,11 @@ import styled from 'styled-components'
 import redStar from '../../assets/img/Gold-star.png'
 import Container from '../Container'
 import Spacer from '../../components/Spacer'
+import steak from '../../assets/img/steak.png'
+import hedge from '../../assets/img/hedge.png'
 
 interface PageHeaderProps {
-  icon?: React.ReactNode
+  icon?: React.ReactNode  
   subtitle?: string
   title?: string
 }
@@ -14,7 +16,17 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
   return (
     <Container>
       <StyledPageHeader>
-      <StyledIcon>{icon}</StyledIcon> 
+      <a href="https://uniswap.info/pair/0x99b46782e350a37d2850ff3713bf29ab3902cd31" target="_blank">
+        <button className='buySteak'>Buy <img src={steak} className="buyLogo" width="35" /> </button>
+      </a>
+     {icon != undefined
+      ? <StyledIcon className="mainIcon">{icon}</StyledIcon>     
+      : <StyledIcon></StyledIcon>
+     }
+      
+      <a href={'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xf1290473e210b2108a85237fbcd7b6eb42cc654f" target="_blank'} target="_blank">
+        <button className='buyHedge'>Buy <img src={hedge} className="buyLogo" width="35" /></button>
+      </a>
       <Spacer size="md" />
         <StyledSubtitle><img src={redStar} className="redStar" width="40" /> {subtitle} <img src={redStar} className="redStar" width="40" /> </StyledSubtitle>
       </StyledPageHeader>
@@ -24,19 +36,18 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
 
 const StyledPageHeader = styled.div`
   align-items: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;  
   padding-bottom: ${(props) => props.theme.spacing[6]}px;
   padding-top: ${(props) => props.theme.spacing[6]}px;
   margin: 0 auto;
+  text-align: center;
 `
 
 const StyledIcon = styled.div`
-  font-size: 120px;
-  
+  font-size: 120px;  
   line-height: 120px;
   text-align: center; 
+  display: inline;
 `
 
 const StyledTitle = styled.h1`
