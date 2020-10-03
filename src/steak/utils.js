@@ -22,6 +22,15 @@ export const getSteakAddress = (steak) => {
 export const getWethContract = (steak) => {
   return steak && steak.contracts && steak.contracts.weth
 }
+export const getUsdcContract = (steak) => {
+  return steak && steak.contracts && steak.contracts.usdc
+}
+export const getWbtcContract = (steak) => {
+  return steak && steak.contracts && steak.contracts.wbtc
+}
+export const getHedgContract = (steak) => {
+  return steak && steak.contracts && steak.contracts.hedg
+}
 
 export const getMasterChefContract = (steak) => {
   return steak && steak.contracts && steak.contracts.masterChef
@@ -83,10 +92,11 @@ export const getEarned = async (masterChefContract, pid, account) => {
 
 export const getTotalLPWethValue = async (
   masterChefContract,
-  wethContract,
+  primaryTokenContract,
   lpContract,
   tokenContract,
   pid,
+  basedCoin=""
 ) => {
   // Get balance of the token address
   const tokenAmountWholeLP = await tokenContract.methods
@@ -100,9 +110,34 @@ export const getTotalLPWethValue = async (
   // Convert that into the portion of total lpContract = p1
   const totalSupply = await lpContract.methods.totalSupply().call()
   // Get total weth value for the lpContract = w1
-  const lpContractWeth = await wethContract.methods
+  let lpContractWeth = await primaryTokenContract.methods
     .balanceOf(lpContract.options.address)
     .call()
+  if(basedCoin === "wbtc") {
+    // lpContractWeth now store wbtc in satoshis
+    const res = await fetch("https://charts.hedgetrade.com/cmc_ticker/eth?quote=USD")
+    const priceData = await res.json()
+    lpContractWeth = (lpContractWeth / (10 ** 9)) * (1/priceData.ETH.PriceBTC);
+    // convert eth to weth
+    lpContractWeth *= 10 ** 18;
+  } else if (basedCoin === "usdc") {
+    // lpContractWeth now store usdc * (10 ^ 18)
+    const res = await fetch("https://charts.hedgetrade.com/cmc_ticker/eth?quote=USD")
+    const priceData = await res.json()
+    lpContractWeth = (lpContractWeth / (10 ** 6)) / priceData.ETH.PriceUSD;
+    // convert eth to weth
+    lpContractWeth *= 10 ** 18;
+  } else if (basedCoin === "hedg") {
+    // lpContractWeth now store hedg
+    const res = await fetch("https://charts.hedgetrade.com/cmc_ticker/hedg,eth?quote=USD")
+    const priceData = await res.json()
+    lpContractWeth =
+      lpContractWeth /
+      10 ** 18 /
+      priceData.HEDG.PriceUSD /
+      priceData.ETH.PriceUSD
+    lpContractWeth *= 10 ** 18;
+  }
   // Return p1 * w1 * 2
   const portionLp = new BigNumber(balance).div(new BigNumber(totalSupply))
   const lpWethWorth = new BigNumber(lpContractWeth)

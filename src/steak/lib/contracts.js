@@ -5,6 +5,8 @@ import XSteakAbi from './abi/xsteak.json'
 import SteakAbi from './abi/steak.json'
 import UNIV2PairAbi from './abi/uni_v2_lp.json'
 import WETHAbi from './abi/weth.json'
+import { addressMap } from './constants'
+
 import {
   contractAddresses,
   SUBTRACT_GAS_LIMIT,
@@ -26,7 +28,10 @@ export class Contracts {
     this.masterChef = new this.web3.eth.Contract(MasterChefAbi)
     this.xSteakStaking = new this.web3.eth.Contract(XSteakAbi)
     this.weth = new this.web3.eth.Contract(WETHAbi)
-
+    this.usdc = new this.web3.eth.Contract(ERC20Abi, addressMap.USDC)
+    this.wbtc = new this.web3.eth.Contract(ERC20Abi, addressMap.WBTC)
+    this.hedg = new this.web3.eth.Contract(ERC20Abi, addressMap.HEDG)
+    
     this.pools = supportedPools.map((pool) =>
       Object.assign(pool, {
         lpAddress: pool.lpAddresses[networkId],

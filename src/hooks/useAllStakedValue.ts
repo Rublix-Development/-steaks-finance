@@ -8,6 +8,10 @@ import { Contract } from 'web3-eth-contract'
 import {
   getMasterChefContract,
   getWethContract,
+  getUsdcContract,
+  getWbtcContract,
+  getHedgContract,
+  getSteakContract,
   getFarms,
   getTotalLPWethValue,
 } from '../steak/utils'
@@ -28,7 +32,10 @@ const useAllStakedValue = () => {
   const steak = useSteak()
   const farms = getFarms(steak)
   const masterChefContract = getMasterChefContract(steak)
-  const wethContact = getWethContract(steak)
+  const wethContract = getWethContract(steak)
+  const usdcContract = getUsdcContract(steak)
+  const wbtcContract = getWbtcContract(steak)
+  const hedgContract = getHedgContract(steak)
   const block = useBlock()
 
   const fetchAllStakedValue = useCallback(async () => {
@@ -42,14 +49,46 @@ const useAllStakedValue = () => {
           pid: number
           lpContract: Contract
           tokenContract: Contract
-        }) =>
-          getTotalLPWethValue(
+        }) => {
+          let basedCurrencyContract;
+          let otherTokenContract;
+          let basedCoin
+          switch(pid) {
+            case(9):
+              basedCurrencyContract = usdcContract;
+              otherTokenContract = tokenContract;
+              basedCoin = "usdc"
+              break;
+            case(12):
+              basedCurrencyContract = usdcContract;
+              otherTokenContract = tokenContract;
+              basedCoin = "usdc"
+              break;
+            case(10):
+              basedCurrencyContract = wbtcContract;
+              otherTokenContract = tokenContract;
+              basedCoin = "wbtc"
+              break;
+            case(13):
+              basedCurrencyContract = hedgContract;
+              otherTokenContract = tokenContract;
+              basedCoin = "hedg"
+              break;
+            default:
+              basedCurrencyContract = wethContract;
+              otherTokenContract = tokenContract;
+              basedCoin = "weth"
+
+          }
+          return getTotalLPWethValue(
             masterChefContract,
-            wethContact,
+            basedCurrencyContract,
             lpContract,
-            tokenContract,
+            otherTokenContract,
             pid,
-          ),
+            basedCoin
+            )
+          }
       ),
     )
 
