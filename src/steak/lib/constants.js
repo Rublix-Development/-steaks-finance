@@ -11,7 +11,11 @@ import comp from '../../assets/img/comp.png'
 import yfi from '../../assets/img/yfi.png'
 import steak from '../../assets/img/steak.png'
 import USDC from '../../assets/img/USDC.png'
+import usdc from '../../assets/img/USDC.png'
 import wbtc from '../../assets/img/wbtc.png'
+import sushi from '../../assets/img/sushi.png'
+import dai from '../../assets/img/dai.png'
+import pickle from '../../assets/img/pickle.png'
 
 export const SUBTRACT_GAS_LIMIT = 100000
 
@@ -52,6 +56,9 @@ export const addressMap = {
   USDC: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
   WBTC: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
   STEAK: '0xeED9e4F2450035D6426276a8aA2084966EE3b1bb',
+  PICKLE: '0x429881672b9ae42b8eba0e26cd9c73711b891ca5',
+  SUSHI: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2',
+  DAI: '0x6b175474e89094c44da98b954eedeac495271d0f',
 }
 
 export const uniswapPools = {
@@ -70,6 +77,9 @@ export const uniswapPools = {
   WBTC_STEAK: '0x82e51A70E199F5a25E56Ea55f4229DcdDB822AFD',
   USDC_HEDG: '0xFc2890ffB3069A1A9d3F7B11C7775a1A1ee721c0',
   HEDG_STEAK: '0xF5cAFa398bEB12dCCFBA917c19922C1EA2d6c056',
+  PICKLE_ETH: '0xdc98556Ce24f007A5eF6dC1CE96322d65832A819',
+  SUSHI_ETH: '0xCE84867c3c02B05dc570d0135103d3fB9CC19433',
+  DAI_USDC: '0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5',
 }
 
 export const contractAddresses = {
@@ -285,6 +295,51 @@ export const supportedPools = [
     icon: snx,
     icon2: eth,
     link: 'https://uniswap.info/pair/0x43ae24960e5534731fc831386c07755a2dc33d47'
+  },
+  {
+    pid: 14,
+    lpAddresses: {
+      1: uniswapPools.PICKLE_ETH,
+    },
+    tokenAddresses: {
+      1: addressMap.PICKLE,
+    },
+    name: 'Relish',
+    symbol: 'PICKLE-ETH Uni-LP',
+    tokenSymbol: 'PICKLE',
+    icon: pickle,
+    icon2: eth,
+    link: 'https://uniswap.info/pair/0xdc98556Ce24f007A5eF6dC1CE96322d65832A819'
+  },
+  {
+    pid: 15,
+    lpAddresses: {
+      1: uniswapPools.SUSHI_ETH,
+    },
+    tokenAddresses: {
+      1: addressMap.SUSHI,
+    },
+    name: 'Surf & Turf',
+    symbol: 'SUSHI-ETH Uni-LP',
+    tokenSymbol: 'SUSHI',
+    icon: sushi,
+    icon2: eth,
+    link: 'https://uniswap.info/pair/0xCE84867c3c02B05dc570d0135103d3fB9CC19433'
+  },
+  {
+    pid: 16,
+    lpAddresses: {
+      1: uniswapPools.DAI_USDC,
+    },
+    tokenAddresses: {
+      1: addressMap.DAI,
+    },
+    name: 'Ground Beef',
+    symbol: 'DAI-USDC Uni-LP',
+    tokenSymbol: 'DAI',
+    icon: dai,
+    icon2: usdc,
+    link: 'https://uniswap.info/pair/0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5'
   },
 
 ]
