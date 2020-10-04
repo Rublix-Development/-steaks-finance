@@ -117,7 +117,7 @@ export const getTotalLPWethValue = async (
     // lpContractWeth now store wbtc in satoshis
     const res = await fetch("https://charts.hedgetrade.com/cmc_ticker/eth?quote=USD")
     const priceData = await res.json()
-    lpContractWeth = (lpContractWeth / (10 ** 9)) * (1/priceData.ETH.PriceBTC);
+    lpContractWeth = (lpContractWeth / (10 ** 8)) * (1/priceData.ETH.PriceBTC);
     // convert eth to weth
     lpContractWeth *= 10 ** 18;
   } else if (basedCoin === "usdc") {
