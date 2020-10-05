@@ -64,9 +64,14 @@ const StakeXSteak: React.FC = () => {
         <StyledCardsWrapper>
           <StyledCardWrapper>
             <StyledInfo>
-            You will earn a portion of the trading fees based on your prorata amount of xSTEAK held relative to the pool. 
-            xSteak can be minted by staking STEAK. You can redeem staked STEAK (plus earned fees) by converting xSTEAK 
-            back into STEAK. {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)} xSTEAK in the whole pool.` : '' }
+              <p>⭐️SteakBar is currently not live since the migration from Uniswap to SteakSwap has not yet taken place. 
+            However, once it goes live, you will earn a portion of the trading fees based on your prorata amount of 
+            xSTEAK held relative to the pool.</p>
+            
+            <p> ⭐️xSteak can be minted by staking STEAK. You can redeem staked STEAK (plus earned fees) by converting 
+            xSTEAK back into STEAK.          
+            {totalSupply ? ` There are currently ${getBalanceNumber(totalSupply)} xSTEAK in the whole pool.` : '' }</p>
+           
             </StyledInfo>
           </StyledCardWrapper>
         </StyledCardsWrapper>
