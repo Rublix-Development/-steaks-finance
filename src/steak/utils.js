@@ -150,6 +150,7 @@ export const getTotalLPWethValue = async (
   const wethAmount = new BigNumber(lpContractWeth)
     .times(portionLp)
     .div(new BigNumber(10).pow(18))
+
   return {
     tokenAmount,
     wethAmount,
