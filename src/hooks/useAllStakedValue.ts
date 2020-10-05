@@ -60,6 +60,7 @@ const useAllStakedValue = () => {
               basedCoin = "usdc"
               break;
             case(12):
+            case(16):
               basedCurrencyContract = usdcContract;
               otherTokenContract = tokenContract;
               basedCoin = "usdc"
