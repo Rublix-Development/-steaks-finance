@@ -56,6 +56,8 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName }) => {
     />,
   )
 
+  console.log(pid)
+
   const handleApprove = useCallback(async () => {
     try {
       setRequestedApproval(true)

@@ -126,7 +126,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
   }, [steak, lpTokenAddress, account, setHarvestable])
 
   const poolActive = true // startTime * 1000 - Date.now() <= 0
-
+  console.log(farm)
   return (
     <StyledCardWrapper>
       {farm.tokenSymbol === 'STEAK' && <StyledCardAccent />}      
@@ -135,9 +135,11 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
           <StyledContent>
             <div className="linkIcon">
               <a href={farm.link.toString()} target="_blank">
-                <img src={link} />
+                <img src={link} width="22px" />
               </a>
             </div>           
+            {farm.active ? <span className="statusText"> <span className="statusActive"></span> Active </span>  
+                         : <span className="statusText"> <span className="statusUnactive"></span> Inactive </span>}
             
             <div className="inline-icons">
               <CardIcon> <img src={farm.icon.toString()} width="55" className='icon-margin' /> </CardIcon>
@@ -149,7 +151,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
             </StyledDetails>
             <Spacer />
-            <div className="red-button" style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
+            
+            <div className={` ${farm.active ? "red-button" : ""}`} style={{ margin: '0 auto', width: '-webkit-fill-available' }} >
             <Button
               disabled={!poolActive}
               text={poolActive ? 'Select' : undefined}

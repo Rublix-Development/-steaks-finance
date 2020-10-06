@@ -26,6 +26,7 @@ const Farm: React.FC = () => {
     icon,
     icon2,
     link,
+    active,
   } = useFarm(farmId) || {
     pid: 0,
     lpToken: '',
@@ -36,6 +37,7 @@ const Farm: React.FC = () => {
     icon: '',
     icon2: '',
     link: '',
+    active: true,
   }
 
   useEffect(() => {

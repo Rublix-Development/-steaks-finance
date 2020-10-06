@@ -90,6 +90,7 @@ code {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .buySteak:hover, .buyHedge:hover{
@@ -106,4 +107,33 @@ code {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.statusText{
+  color: #fff;
+  position: relative;
+  left: -76px;
+  top: -16px;
+}
+
+.statusActive{
+  position: relative;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color:#0ebf0e;    
+    top: 16px;
+    right: 18px;
+    border-radius: 50%;
+}
+
+.statusUnactive{
+  position: relative;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color:#ff0000;    
+    top: 16px;
+    right: 18px;
+    border-radius: 50%;
 }

@@ -14,6 +14,7 @@ export interface Farm {
   link: React.ReactNode
   id: string
   tokenSymbol: string
+  active: Boolean
 }
 
 export interface FarmsContext {
