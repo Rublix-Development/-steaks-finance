@@ -113,6 +113,7 @@ export const supportedPools = [
     icon: steak,
     icon2: eth,
     link: 'https://uniswap.info/pair/0x99b46782e350a37d2850ff3713bf29ab3902cd31',
+    active: true,
   },
   {
     pid: 9,
@@ -129,6 +130,7 @@ export const supportedPools = [
     icon: USDC,
     icon2: steak,
     link: 'https://uniswap.info/pair/0x48e130b740af7d2bac0ee7e0df95dcdc3f6ea162',
+    active: false,
   },
   {
     pid: 10,
@@ -145,6 +147,7 @@ export const supportedPools = [
     icon: wbtc,
     icon2: steak,
     link: 'https://uniswap.info/pair/0x82e51a70e199f5a25e56ea55f4229dcddb822afd',
+    active: false,
   },
   {
     pid: 0,
@@ -160,6 +163,7 @@ export const supportedPools = [
     icon: hedge,
     icon2: eth,
     link: 'https://uniswap.info/pair/0xda73ce7778c87131b6ad4210999de8d93b0a28e9',
+    active: true,
   },
   {
     pid: 12,
@@ -175,6 +179,7 @@ export const supportedPools = [
     icon: hedge,
     icon2: USDC,
     link: 'https://uniswap.info/pair/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
+    active: true,
   },
   {
     pid: 13,
@@ -190,6 +195,7 @@ export const supportedPools = [
     icon: hedge,
     icon2: steak,
     link: 'https://uniswap.info/pair/0xf5cafa398beb12dccfba917c19922c1ea2d6c056',
+    active: false,
   },
   {
     pid: 1,
@@ -205,6 +211,7 @@ export const supportedPools = [
     icon: USDC,
     icon2: eth,
     link: 'https://uniswap.info/pair/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
+    active: false,
   },
   {
     pid: 7,
@@ -220,6 +227,7 @@ export const supportedPools = [
     icon: wbtc,
     icon2: eth,
     link: 'https://uniswap.info/pair/0xbb2b8038a1640196fbe3e38816f3e67cba72d940',
+    active: false,
   },
   {
     pid: 3,
@@ -235,6 +243,7 @@ export const supportedPools = [
     icon: link, 
     icon2: eth,
     link: 'https://uniswap.info/pair/0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974',
+    active: false,
   },
   {
     pid: 4,
@@ -249,7 +258,8 @@ export const supportedPools = [
     tokenSymbol: 'UNI',
     icon: uni,
     icon2: eth,
-    link: 'https://uniswap.info/pair/0xd3d2e2692501a5c9ca623199d38826e513033a17'
+    link: 'https://uniswap.info/pair/0xd3d2e2692501a5c9ca623199d38826e513033a17',
+    active: false,
   },
   {
     pid: 5,
@@ -264,7 +274,8 @@ export const supportedPools = [
     tokenSymbol: 'COMP',
     icon: comp,
     icon2: eth,
-    link: 'https://uniswap.info/pair/0xcffdded873554f362ac02f8fb1f02e5ada10516f'
+    link: 'https://uniswap.info/pair/0xcffdded873554f362ac02f8fb1f02e5ada10516f',
+    active: false,
   },
   {
     pid: 6,
@@ -279,7 +290,8 @@ export const supportedPools = [
     tokenSymbol: 'YFI',
     icon: yfi,
     icon2: eth,
-    link: 'https://uniswap.info/pair/0x2fdbadf3c4d5a8666bc06645b8358ab803996e28'
+    link: 'https://uniswap.info/pair/0x2fdbadf3c4d5a8666bc06645b8358ab803996e28',
+    active: false,
   },
   {
     pid: 11,
@@ -294,7 +306,8 @@ export const supportedPools = [
     tokenSymbol: 'SNX',
     icon: snx,
     icon2: eth,
-    link: 'https://uniswap.info/pair/0x43ae24960e5534731fc831386c07755a2dc33d47'
+    link: 'https://uniswap.info/pair/0x43ae24960e5534731fc831386c07755a2dc33d47',
+    active: false,
   },
   {
     pid: 14,
@@ -309,7 +322,8 @@ export const supportedPools = [
     tokenSymbol: 'PICKLE',
     icon: pickle,
     icon2: eth,
-    link: 'https://uniswap.info/pair/0xdc98556Ce24f007A5eF6dC1CE96322d65832A819'
+    link: 'https://uniswap.info/pair/0xdc98556Ce24f007A5eF6dC1CE96322d65832A819',
+    active: false,
   },
   {
     pid: 15,
@@ -324,7 +338,8 @@ export const supportedPools = [
     tokenSymbol: 'SUSHI',
     icon: sushi,
     icon2: eth,
-    link: 'https://uniswap.info/pair/0xCE84867c3c02B05dc570d0135103d3fB9CC19433'
+    link: 'https://uniswap.info/pair/0xCE84867c3c02B05dc570d0135103d3fB9CC19433',
+    active: false,
   },
   {
     pid: 16,
@@ -339,7 +354,11 @@ export const supportedPools = [
     tokenSymbol: 'DAI',
     icon: dai,
     icon2: usdc,
-    link: 'https://uniswap.info/pair/0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5'
+    link: 'https://uniswap.info/pair/0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5',
+    active: false,
   },
 
 ]
+
+supportedPools.sort(function(a,b){return b.active-a.active});
+

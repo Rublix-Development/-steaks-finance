@@ -58,6 +58,7 @@ export const getFarms = (steak) => {
           tokenContract,
           lpAddress,
           lpContract,
+          active,
         }) => ({
           pid,
           id: symbol,
@@ -73,6 +74,7 @@ export const getFarms = (steak) => {
           icon,
           icon2,
           link,
+          active,
         }),
       )
     : []
