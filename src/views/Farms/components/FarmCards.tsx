@@ -172,7 +172,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <span>
                 {farm.apy
                   ? ((farm.apy > new BigNumber(0)) ? `${farm.apy
-                      .times(new BigNumber(100))
+                      .times(new BigNumber(100).times(2))
                       .toNumber()
                       .toLocaleString('en-US')
                       .slice(0, -1)}%` : '0%')
