@@ -116,6 +116,38 @@ export const supportedPools = [
     active: true,
   },
   {
+    pid: 0,
+    lpAddresses: {
+      1: uniswapPools.HEDG_ETH,
+    },
+    tokenAddresses: {
+      1: addressMap.HEDG,
+    },
+    name: 'Tomahawk',
+    symbol: 'ETH-HEDG Uni-LP',
+    tokenSymbol: 'HEDG',
+    icon: hedge,
+    icon2: eth,
+    link: 'https://uniswap.info/pair/0xda73ce7778c87131b6ad4210999de8d93b0a28e9',
+    active: true,
+  },
+  {
+    pid: 12,
+    lpAddresses: {
+      1: uniswapPools.USDC_HEDG,
+    },
+    tokenAddresses: {
+      1: addressMap.HEDG,
+    },
+    name: 'Flank',
+    symbol: 'USDC-HEDG Uni-LP',
+    tokenSymbol: 'USDC',
+    icon: hedge,
+    icon2: USDC,
+    link: 'https://uniswap.info/pair/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
+    active: true,
+  },
+  {
     pid: 9,
     lpAddresses: {
       1: uniswapPools.USDC_STEAK,
@@ -148,38 +180,6 @@ export const supportedPools = [
     icon2: steak,
     link: 'https://uniswap.info/pair/0x82e51a70e199f5a25e56ea55f4229dcddb822afd',
     active: false,
-  },
-  {
-    pid: 0,
-    lpAddresses: {
-      1: uniswapPools.HEDG_ETH,
-    },
-    tokenAddresses: {
-      1: addressMap.HEDG,
-    },
-    name: 'Tomahawk',
-    symbol: 'ETH-HEDG Uni-LP',
-    tokenSymbol: 'HEDG',
-    icon: hedge,
-    icon2: eth,
-    link: 'https://uniswap.info/pair/0xda73ce7778c87131b6ad4210999de8d93b0a28e9',
-    active: true,
-  },
-  {
-    pid: 12,
-    lpAddresses: {
-      1: uniswapPools.USDC_HEDG,
-    },
-    tokenAddresses: {
-      1: addressMap.HEDG,
-    },
-    name: 'Flank',
-    symbol: 'USDC-HEDG Uni-LP',
-    tokenSymbol: 'USDC',
-    icon: hedge,
-    icon2: USDC,
-    link: 'https://uniswap.info/pair/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
-    active: true,
   },
   {
     pid: 13,
