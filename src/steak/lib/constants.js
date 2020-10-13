@@ -113,7 +113,7 @@ export const supportedPools = [
     icon: steak,
     icon2: eth,
     link: 'https://uniswap.info/pair/0x99b46782e350a37d2850ff3713bf29ab3902cd31',
-    active: true,
+    active: false,
   },
   {
     pid: 0,
@@ -129,7 +129,7 @@ export const supportedPools = [
     icon: hedge,
     icon2: eth,
     link: 'https://uniswap.info/pair/0xda73ce7778c87131b6ad4210999de8d93b0a28e9',
-    active: true,
+    active: false,
   },
   {
     pid: 12,
@@ -145,7 +145,7 @@ export const supportedPools = [
     icon: hedge,
     icon2: USDC,
     link: 'https://uniswap.info/pair/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
-    active: true,
+    active: false,
   },
   {
     pid: 9,
