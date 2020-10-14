@@ -39,7 +39,7 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({
 
   return (
     <Modal>
-      <ModalTitle text={`Withdraw ${tokenName}`} />
+      <ModalTitle text={`Emergency Withdraw ${tokenName}. All tokens will be withdrawn without harvest. Ignore the amount input below.`} />
       <TokenInput
         onSelectMax={handleSelectMax}
         onChange={handleChange}
