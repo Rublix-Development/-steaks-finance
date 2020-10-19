@@ -4,37 +4,15 @@ import styled from 'styled-components'
 const Nav: React.FC = () => {
   return (
     <StyledNav>
-       <StyledLink
+     
+      <StyledLink
         target="_blank"
-        href="https://hedgetrade.com/"
-      >
-        Hedgetrade
-      </StyledLink>
+        href="https://etherscan.io/address/0xd58211d19f1A91a9a379D7BE4E20B4e4C3d42c17">Contract</StyledLink>
 
-      <StyledLink
-        target="_blank"
-        href="https://etherscan.io/address/0xd58211d19f1A91a9a379D7BE4E20B4e4C3d42c17"
-      >
-        Contract
-      </StyledLink>
-      <StyledLink
-        target="_blank"
-        href="https://t.me/steaksfinancechat"
-      >
-        Telegram
-      </StyledLink>
-      <StyledLink target="_blank" href="https://discord.com/invite/qYZtSyV">
-        Discord
-      </StyledLink>
-      <StyledLink target="_blank" href="https://github.com/rublixdev/steaks-protocol">
-        Github
-      </StyledLink>
-      <StyledLink target="_blank" href="https://twitter.com/steaksfinance">
-        Twitter
-      </StyledLink>
-      <StyledLink target="_blank" href="https://medium.com/@steaksfinance/hedgetrade-introduces-steaks-finance-a-fair-launch-defi-token-protocol-with-lasting-power-fc87e428777f">
-        Medium
-      </StyledLink>
+      <StyledLink target="_blank" href="https://t.me/steaksfinancechat">Telegram</StyledLink>    
+    
+      <StyledLink target="_blank" href="https://twitter.com/steaksfinance">Twitter</StyledLink>
+      
     </StyledNav>
   )
 }
